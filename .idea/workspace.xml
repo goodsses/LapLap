@@ -4,113 +4,29 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f198251b-1e67-48c0-bdcc-d9139121fe8f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1387be4b-3d79-49c6-9fbb-b1a2a77976b9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/NaNa.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/anno/CriteriaWhere.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/api/CommonApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/bean/PageReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/bean/SortRes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/cons/ExceConst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/enu/WhereType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/impl/CommonServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/service/CommonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/service/Criteriable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/utils/DateTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/utils/Tools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/wrapper/ResultBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/wrapper/ResultObListWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/wrapper/ResultObMapWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/wrapper/ResultObWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/anno/CriteriaWhere.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/api/CommonApi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/bean/PageReq.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/bean/SortRes.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/cons/ExceConst.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/entity/BaseEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/enu/WhereType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/impl/CommonServiceImpl$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/impl/CommonServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/service/CommonService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/service/Criteriable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/utils/DateTime.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/utils/Tools.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/wrapper/ResultBase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/wrapper/ResultObListWrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/wrapper/ResultObMapWrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-api/target/classes/com/sh/common/wrapper/ResultObWrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/Java开发实用小心得.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/Java开发编码规范.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/LapLap基础框架流程.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/SpringBootScope.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/debug-lxy.2019-04-10.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/debug-lxy.2019-04-11.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/debug-lxy.2019-04-16.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/debug-lxy.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error-lxy.2019-04-10.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error-lxy.2019-04-11.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error-lxy.2019-04-15.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error-lxy.2019-04-16.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error-lxy.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/lxy.2019-04-10.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/lxy.2019-04-11.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/lxy.2019-04-15.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/lxy.2019-04-16.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/lxy.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/warn-lxy.2019-04-10.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/warn-lxy.2019-04-11.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/warn-lxy.2019-04-15.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/warn-lxy.2019-04-16.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/warn-lxy.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/StartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/config/DsConf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/config/SwaggerConf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/config/prop/BaseDataSourceProp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/config/prop/DsProp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/SysUserApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/SysUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/SysUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/SysUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/SysUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/util/CipherUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/src/test/java/com/sh/A_19_4_16_Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/META-INF/start-ser.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/StartApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/config/DsConf$Config.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/config/DsConf.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/config/SwaggerConf.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/config/prop/BaseDataSourceProp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/config/prop/DsProp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/ctrl/api/SysUserApi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/ctrl/dao/SysUserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/ctrl/entity/SysUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/ctrl/imp/SysUserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/ctrl/service/SysUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/com/sh/util/CipherUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/classes/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-ser/target/test-classes/com/sh/A_19_4_16_Test.class" afterDir="false" />
+    <list default="true" id="f198251b-1e67-48c0-bdcc-d9139121fe8f" name="Default" comment="init">
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/DealersApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/ModelsApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/QuestionBankApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/UserApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/DealersDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/ModelsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/QuestionBankDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/Dealers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/Models.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/QuestionBank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/DealersServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/ModelsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/QuestionBankServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/DealersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/ModelsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/QuestionBankService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1387be4b-3d79-49c6-9fbb-b1a2a77976b9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1387be4b-3d79-49c6-9fbb-b1a2a77976b9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -154,26 +70,34 @@
         <item name="hapiactivite@47.94.255.160" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="hapiactivite: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="sys_user: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="dealers: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hapiactivite@47.94.255.160" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="hapiactivite: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="models: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hapiactivite@47.94.255.160" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="hapiactivite: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="questionbank: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hapiactivite@47.94.255.160" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="hapiactivite: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -213,26 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/lxy/service/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/lxy/service/entity/CustomerQualified.java" />
-        <option value="$PROJECT_DIR$/start-ser/src/main/java/StartApplication.java" />
-        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/lxy/StartApplication.java" />
-        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/lxy/ctrl/dao/CustomerQualifiedDao.java" />
-        <option value="$PROJECT_DIR$/common-api/src/main/java/com/lxy/common/bean/SortRes.java" />
-        <option value="$PROJECT_DIR$/common-api/src/main/java/com/lxy/common/bean/PageReq.java" />
-        <option value="$PROJECT_DIR$/common-api/src/main/java/com/lxy/common/service/CommonService.java" />
-        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/lxy/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/doc/Java开发代码规范.md" />
-        <option value="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/wrapper/wrapper.java" />
-        <option value="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/wrapper/ResultWrapper.java" />
-        <option value="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/wrapper/ResultJsonWrapper.java" />
-        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/config/prop/DsProp.java" />
-        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/config/SwaggerConf.java" />
-        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/controller/shanghai/MinHangController.java" />
-        <option value="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/wrapper/ResultObToJsonWrapper.java" />
-        <option value="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/wrapper/ResultObWrapper.java" />
-        <option value="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/wrapper/ResultObListWrapper.java" />
-        <option value="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/wrapper/ResultObMapWrapper.java" />
         <option value="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/wrapper/ResultBase.java" />
         <option value="$PROJECT_DIR$/common-api/src/main/java/com/sh/common/cons/ExceConst.java" />
         <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/CustomerQualifiedService.java" />
@@ -264,6 +168,26 @@
         <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/config/DsConf.java" />
         <option value="$PROJECT_DIR$/start-ser/pom.xml" />
         <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/util/CipherUtil.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/Dealers.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/Models.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/User.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/QuestionBank.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/DealersDao.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/ModelsDao.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/QuestionBankDao.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/UserService.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/DealersService.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/ModelsService.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/QuestionBankService.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/DealersServiceImpl.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/ModelsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/QuestionBankServiceImpl.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/DealersApi.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/ModelsApi.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/QuestionBankApi.java" />
+        <option value="$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/UserApi.java" />
       </list>
     </option>
   </component>
@@ -368,16 +292,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sh" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LapLap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LapLap" type="462c0819:PsiDirectoryNode" />
-              <item name="start-ser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sh" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -402,7 +316,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574865601484" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574869446610" />
     <property name="last_opened_file_path" value="E:/work/Git/Git/bin/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -410,24 +324,24 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JoinSoft\Idea\LapLap" />
-      <recent name="D:\JoinSoft\Idea\LapLap\doc" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.sh.util" />
-      <recent name="com.sh.common.utils" />
-      <recent name="com.sh.common.service" />
-      <recent name="com.sh.common.enu" />
-      <recent name="com.sh.common.anno" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JoinSoft\Idea\LapLap\doc" />
       <recent name="D:\JoinSoft\Idea\LapLap" />
       <recent name="D:\JoinSoft\Idea\LapLap\start-ser\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sh.ctrl.imp" />
+      <recent name="com.sh.ctrl.service" />
+      <recent name="com.sh.ctrl.api" />
+      <recent name="com.sh.ctrl.dao" />
+      <recent name="com.sh.util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JoinSoft\Idea\LapLap" />
+      <recent name="D:\JoinSoft\Idea\LapLap\doc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -510,7 +424,7 @@
       <workItem from="1554779362420" duration="47432000" />
       <workItem from="1555063415551" duration="38325000" />
       <workItem from="1574861194152" duration="2452000" />
-      <workItem from="1574864324847" duration="1143000" />
+      <workItem from="1574864324847" duration="4871000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1555290989605</created>
@@ -528,7 +442,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89352000" />
+    <option name="totallyTimeSpent" value="93080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -637,40 +551,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/EmbeddedId.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.17.Final/hibernate-core-5.2.17.Final.jar!/org/hibernate/SharedSessionContract.class" />
-    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/controller/shanghai/MinHangController.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.13.RELEASE/spring-data-jpa-2.0.13.RELEASE.jar!/org/springframework/data/jpa/provider/HibernateUtils.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/criteria/CriteriaBuilder.class" />
-    <entry file="file://$PROJECT_DIR$/common-api/src/main/java/com/sh/common/anno/CriteriaWhere.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-api/src/main/java/com/sh/common/enu/WhereType.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/String.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileFilter.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Comparable.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/File.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/TupleElement.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/criteria/Selection.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/criteria/Expression.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/criteria/Predicate.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.12.RELEASE/spring-beans-5.0.12.RELEASE.jar!/org/springframework/beans/factory/annotation/InjectionMetadata.class" />
-    <entry file="file://$PROJECT_DIR$/common-api/src/main/java/com/sh/common/service/Criteriable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start-ser/src/test/java/com.sh" />
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/RunWith.class" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/function/Predicate.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/stream/ReferencePipeline.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/stream/Stream.java" />
     <entry file="file://$PROJECT_DIR$/start-ser/src/test/java/com/sh/A_19_4_16_Test.java">
@@ -793,16 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/SysUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/SysUserApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -859,10 +729,224 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="320">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/Dealers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/Models.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/entity/QuestionBank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/SysUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/QuestionBankDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/ModelsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/dao/DealersDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/DealersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/ModelsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/QuestionBankService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/DealersServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding>
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/ModelsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding>
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding>
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/imp/QuestionBankServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding>
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/DealersApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/ModelsApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding>
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/QuestionBankApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="47" lean-forward="true" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-ser/src/main/java/com/sh/ctrl/api/UserApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding>
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
           </folding>
         </state>
       </provider>
