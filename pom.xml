@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lxy</groupId>
+    <artifactId>LapLap</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- 继承父包，从此翻身成为boot项目 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.8.RELEASE</version>
+    </parent>
+
+    <!-- 承接模块 -->
+    <modules>
+        <module>common-api</module>
+        <module>start-ser</module>
+    </modules>
+
+    <!-- 架包版本管理 -->
+    <properties>
+        <!--数据源-->
+        <druid.version>1.1.9</druid.version>
+        <!--guava缓存<><>博客：https://www.cnblogs.com/fengli9998/p/7805692.html-->
+        <guava.version>25.1-jre</guava.version>
+        <!--生成二维码的技术目前两大类：QRCode和Zxing<><>博客：https://blog.csdn.net/kioo_i_see/article/details/82775097-->
+        <zxing.version>3.3.3</zxing.version>
+        <!--JSON处理-->
+        <fastjson.version>1.2.56</fastjson.version>
+        <!--处理io和文件监控<><>博客：https://www.cnblogs.com/Jeson2016/p/6871644.html-->
+        <commons-io.version>2.6</commons-io.version>
+        <!--Apache下一个开源的公共资源池，用来存放链接-->
+        <commons-pool2.version>2.5.0</commons-pool2.version>
+        <!--java基础类库-->
+        <commons-beanutil.version>1.9.3</commons-beanutil.version>
+        <!--apache基础工具包-->
+        <commons-lang3.version>3.4</commons-lang3.version>
+        <!--http工具类库-->
+        <commons-httpclient.version>3.1</commons-httpclient.version>
+        <!--项目管理swagger-->
+        <swagger2.version>2.9.0</swagger2.version>
+        <!--开源的swaggerUI界面-->
+        <swagger-ui.version>1.7.9</swagger-ui.version>
+        <!--dubbo是SOA面向服务的组织架构<><>博客：https://www.cnblogs.com/wang-meng/p/5791598.html-->
+        <dubbo.version>2.6.2</dubbo.version>
+        <!--使用curator操作zookeeper-->
+        <curator.version>4.0.1</curator.version>
+        <!--动物园管理小动物，注册中心<><>博客：https://www.jianshu.com/p/70151fc0ef5d-->
+        <zookeeper.version>3.4.11</zookeeper.version>
+        <!--分页插件-->
+        <pagehelper-boot.version>1.2.3</pagehelper-boot.version>
+        <!--jsoup解析xml，解决跨域等-->
+        <jsoup.version>1.10.2</jsoup.version>
+        <!--oracle数据库-->
+        <ojdbc.version>7</ojdbc.version>
+        <!--sql结构化语言-->
+        <sqlserver.version>4.0</sqlserver.version>
+    </properties>
+
+    <!--如果子模块想引用父模块架包则要dependencyManagement，不想引用就不要-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons-beanutil.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>${commons-pool2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-httpclient</groupId>
+                <artifactId>commons-httpclient</artifactId>
+                <version>${commons-httpclient.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>core</artifactId>
+                <version>${zxing.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>swagger-bootstrap-ui</artifactId>
+                <version>${swagger-ui.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.5.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.oracle</groupId>
+                <artifactId>ojdbc7</artifactId>
+                <version>${ojdbc.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.microsoft.sqlserver</groupId>
+                <artifactId>sqljdbc4</artifactId>
+                <version>${sqlserver.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+        <!--<repository>
+            <id>远程仓库唯一标识符</id>
+            <url>远程仓库的url</url>
+        </repository>-->
+        <repository>
+            <id>JCenter</id>
+            <url>https://jcenter.bintray.com</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <url>http://repo1.maven.org/maven2/</url>
+        </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <url>http://repo.spring.io/milestone</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <url>http://repo.spring.io/milestone</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>

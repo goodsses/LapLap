@@ -1,0 +1,696 @@
+20190411 104937 232 INF - [                                ] com.sh.StartApplication                    50: Starting StartApplication on QH-LP-384-B with PID 12244 (D:\JoinSoft\Idea\LapLap\start-ser\target\classes started by uo991 in D:\JoinSoft\Idea\LapLap)
+20190411 104937 320 INF - [                                ] com.sh.StartApplication                   654: No active profile set, falling back to default profiles: default
+20190411 104937 463 INF - [                                ] ConfigServletWebServerApplicationContext  588: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4dd02341: startup date [Thu Apr 11 10:49:37 CST 2019]; root of context hierarchy
+20190411 104939 660 INF - [                                ] o.s.i.config.IntegrationRegistrar         361: No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20190411 104940 211 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  130: No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20190411 104940 223 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  158: No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+20190411 104940 550 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$376e47c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 104940 720 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$a26002f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 104941 800 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer    91: Tomcat initialized with port(s): 9999 (http)
+20190411 104941 852 INF - [                                ] o.apache.catalina.core.StandardService    180: Starting service [Tomcat]
+20190411 104941 853 INF - [                                ] org.apache.catalina.core.StandardEngine   180: Starting Servlet Engine: Apache Tomcat/8.5.37
+20190411 104941 871 INF - [                                ] o.a.catalina.core.AprLifecycleListener    180: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\JoinSoft\python\Scripts\;D:\JoinSoft\python\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;D:\JoinSoft\maven\apache-maven-3.3.9\bin;D:\JoinSoftexe\Node\nvm;D:\JoinSoftexe\Node\nodejs;D:\JoinSoftexe\Node\nvm\v11.6.0;D:\Program Files\TortoiseSVN\bin;C:\Users\uo991\AppData\Local\Microsoft\WindowsApps;D:\JoinSoft\Git\Git\cmd;;.]
+20190411 104942 103 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring embedded WebApplicationContext
+20190411 104942 103 INF - [                                ] o.s.web.context.ContextLoader             296: Root WebApplicationContext: initialization completed in 4640 ms
+20190411 104942 232 INF - [                                ] o.s.b.w.servlet.ServletRegistrationBean   187: Servlet dispatcherServlet mapped to [/]
+20190411 104942 240 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'characterEncodingFilter' to: [/*]
+20190411 104942 241 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20190411 104942 241 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20190411 104942 242 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'requestContextFilter' to: [/*]
+20190411 104944 161 INF - [                                ] com.alibaba.druid.pool.DruidDataSource    928: {dataSource-1} inited
+20190411 104944 247 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 104944 282 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 104944 475 INF - [                                ] org.hibernate.Version                      45: HHH000412: Hibernate Core {5.2.17.Final}
+20190411 104944 477 INF - [                                ] org.hibernate.cfg.Environment             213: HHH000206: hibernate.properties not found
+20190411 104944 544 INF - [                                ] o.hibernate.annotations.common.Version     66: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20190411 104944 801 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+20190411 104944 899 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@2e4b5da1
+20190411 104944 900 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@2e4b5da1
+20190411 104944 902 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@6879e983
+20190411 104944 902 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@6879e983
+20190411 104945 840 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 104947 201 WAR - [                                ] aWebConfiguration$JpaWebMvcConfiguration  237: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20190411 104947 348 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/beijing/login/index],methods=[GET]}" onto public java.lang.String com.sh.controller.LoginController.getIndex()
+20190411 104947 354 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/sh/minhang/getMinHangList],methods=[POST]}" onto public java.lang.String com.sh.controller.shanghai.MinHangController.getMinHangList()
+20190411 104947 363 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+20190411 104947 365 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+20190411 104947 367 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+20190411 104947 373 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20190411 104947 374 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20190411 104947 738 INF - [                                ] pertySourcedRequestMappingHandlerMapping   69: Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+20190411 104947 916 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 104948 317 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerAdapter  588: Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4dd02341: startup date [Thu Apr 11 10:49:37 CST 2019]; root of context hierarchy
+20190411 104948 446 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 104948 447 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 104948 601 WAR - [                                ] ion$DefaultTemplateResolverConfiguration  107: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+20190411 104949 085 INF - [                                ] o.s.ui.freemarker.SpringTemplateLoader     62: SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4dd02341: startup date [Thu Apr 11 10:49:37 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+20190411 104949 088 INF - [                                ] o.s.w.s.v.f.FreeMarkerConfigurer          131: ClassTemplateLoader for Spring macros added to FreeMarker configuration
+20190411 104949 127 WAR - [                                ] o.s.b.a.f.FreeMarkerAutoConfiguration      70: Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+20190411 104949 301 INF - [                                ] o.s.s.c.ThreadPoolTaskScheduler           171: Initializing ExecutorService 'taskScheduler'
+20190411 104949 951 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         433: Registering beans for JMX exposure on startup
+20190411 104949 956 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         895: Bean with name 'myDataSource' has been autodetected for JMX exposure
+20190411 104949 971 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         668: Located MBean 'myDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=myDataSource,type=DruidDataSource]
+20190411 104949 996 INF - [                                ] o.s.c.support.DefaultLifecycleProcessor   356: Starting beans in phase 0
+20190411 104949 997 INF - [                                ] o.s.i.endpoint.EventDrivenConsumer        107: Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20190411 104949 998 INF - [                                ] o.s.i.channel.PublishSubscribeChannel      64: Channel 'application.errorChannel' has 1 subscriber(s).
+20190411 104949 999 INF - [                                ] o.s.i.endpoint.EventDrivenConsumer        165: started _org.springframework.integration.errorLogger
+20190411 104949 999 INF - [                                ] o.s.c.support.DefaultLifecycleProcessor   356: Starting beans in phase 2147483647
+20190411 104950 000 INF - [                                ] d.s.w.p.DocumentationPluginsBootstrapper  160: Context refreshed
+20190411 104950 038 INF - [                                ] d.s.w.p.DocumentationPluginsBootstrapper  163: Found 3 custom documentation plugin(s)
+20190411 104950 097 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 104950 321 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 104950 326 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 104950 378 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer   206: Tomcat started on port(s): 9999 (http) with context path '/sh'
+20190411 104950 383 INF - [                                ] com.sh.StartApplication                    59: Started StartApplication in 14.021 seconds (JVM running for 16.602)
+20190411 104959 913 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring FrameworkServlet 'dispatcherServlet'
+20190411 104959 913 INF - [                                ] o.s.web.servlet.DispatcherServlet         497: FrameworkServlet 'dispatcherServlet': initialization started
+20190411 104959 949 INF - [                                ] o.s.web.servlet.DispatcherServlet         512: FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+20190411 105004 169 INF - [                                ] o.h.h.i.QueryTranslatorFactoryInitiator    47: HHH000397: Using ASTQueryTranslatorFactory
+20190411 105532 314 INF - [                                ] com.sh.StartApplication                    50: Starting StartApplication on QH-LP-384-B with PID 13360 (D:\JoinSoft\Idea\LapLap\start-ser\target\classes started by uo991 in D:\JoinSoft\Idea\LapLap)
+20190411 105532 322 INF - [                                ] com.sh.StartApplication                   654: No active profile set, falling back to default profiles: default
+20190411 105532 452 INF - [                                ] ConfigServletWebServerApplicationContext  588: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3212a8d7: startup date [Thu Apr 11 10:55:32 CST 2019]; root of context hierarchy
+20190411 105534 477 INF - [                                ] o.s.i.config.IntegrationRegistrar         361: No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20190411 105535 055 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  130: No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20190411 105535 063 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  158: No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+20190411 105535 389 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5c1bd3a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 105535 542 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$c70d8ed8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 105536 596 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer    91: Tomcat initialized with port(s): 9999 (http)
+20190411 105536 644 INF - [                                ] o.apache.catalina.core.StandardService    180: Starting service [Tomcat]
+20190411 105536 645 INF - [                                ] org.apache.catalina.core.StandardEngine   180: Starting Servlet Engine: Apache Tomcat/8.5.37
+20190411 105536 662 INF - [                                ] o.a.catalina.core.AprLifecycleListener    180: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\JoinSoft\python\Scripts\;D:\JoinSoft\python\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;D:\JoinSoft\maven\apache-maven-3.3.9\bin;D:\JoinSoftexe\Node\nvm;D:\JoinSoftexe\Node\nodejs;D:\JoinSoftexe\Node\nvm\v11.6.0;D:\Program Files\TortoiseSVN\bin;C:\Users\uo991\AppData\Local\Microsoft\WindowsApps;D:\JoinSoft\Git\Git\cmd;;.]
+20190411 105536 863 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring embedded WebApplicationContext
+20190411 105536 863 INF - [                                ] o.s.web.context.ContextLoader             296: Root WebApplicationContext: initialization completed in 4411 ms
+20190411 105536 993 INF - [                                ] o.s.b.w.servlet.ServletRegistrationBean   187: Servlet dispatcherServlet mapped to [/]
+20190411 105537 002 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'characterEncodingFilter' to: [/*]
+20190411 105537 003 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20190411 105537 003 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20190411 105537 003 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'requestContextFilter' to: [/*]
+20190411 105538 899 INF - [                                ] com.alibaba.druid.pool.DruidDataSource    928: {dataSource-1} inited
+20190411 105538 991 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 105539 026 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 105539 197 INF - [                                ] org.hibernate.Version                      45: HHH000412: Hibernate Core {5.2.17.Final}
+20190411 105539 200 INF - [                                ] org.hibernate.cfg.Environment             213: HHH000206: hibernate.properties not found
+20190411 105539 288 INF - [                                ] o.hibernate.annotations.common.Version     66: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20190411 105539 591 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+20190411 105539 698 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@562f6681
+20190411 105539 698 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@562f6681
+20190411 105539 699 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@105c6c9e
+20190411 105539 700 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@105c6c9e
+20190411 105540 536 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 105541 670 WAR - [                                ] aWebConfiguration$JpaWebMvcConfiguration  237: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20190411 105541 799 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/beijing/login/index],methods=[GET]}" onto public com.sh.common.wrapper.ResultObWrapper<com.sh.ctrl.entity.CustomerQualified> com.sh.controller.LoginController.getIndex()
+20190411 105541 804 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/sh/minhang/getMinHangList],methods=[POST]}" onto public java.lang.String com.sh.controller.shanghai.MinHangController.getMinHangList()
+20190411 105541 810 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+20190411 105541 811 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+20190411 105541 813 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+20190411 105541 818 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20190411 105541 819 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20190411 105542 136 INF - [                                ] pertySourcedRequestMappingHandlerMapping   69: Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+20190411 105542 283 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 105542 616 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerAdapter  588: Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3212a8d7: startup date [Thu Apr 11 10:55:32 CST 2019]; root of context hierarchy
+20190411 105542 718 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 105542 719 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 105542 841 WAR - [                                ] ion$DefaultTemplateResolverConfiguration  107: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+20190411 105543 276 INF - [                                ] o.s.ui.freemarker.SpringTemplateLoader     62: SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3212a8d7: startup date [Thu Apr 11 10:55:32 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+20190411 105543 279 INF - [                                ] o.s.w.s.v.f.FreeMarkerConfigurer          131: ClassTemplateLoader for Spring macros added to FreeMarker configuration
+20190411 105543 312 WAR - [                                ] o.s.b.a.f.FreeMarkerAutoConfiguration      70: Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+20190411 105543 458 INF - [                                ] o.s.s.c.ThreadPoolTaskScheduler           171: Initializing ExecutorService 'taskScheduler'
+20190411 105543 801 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         433: Registering beans for JMX exposure on startup
+20190411 105543 802 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         895: Bean with name 'myDataSource' has been autodetected for JMX exposure
+20190411 105543 814 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         668: Located MBean 'myDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=myDataSource,type=DruidDataSource]
+20190411 105543 835 INF - [                                ] o.s.c.support.DefaultLifecycleProcessor   356: Starting beans in phase 0
+20190411 105543 836 INF - [                                ] o.s.i.endpoint.EventDrivenConsumer        107: Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20190411 105543 837 INF - [                                ] o.s.i.channel.PublishSubscribeChannel      64: Channel 'application.errorChannel' has 1 subscriber(s).
+20190411 105543 837 INF - [                                ] o.s.i.endpoint.EventDrivenConsumer        165: started _org.springframework.integration.errorLogger
+20190411 105543 837 INF - [                                ] o.s.c.support.DefaultLifecycleProcessor   356: Starting beans in phase 2147483647
+20190411 105543 838 INF - [                                ] d.s.w.p.DocumentationPluginsBootstrapper  160: Context refreshed
+20190411 105543 864 INF - [                                ] d.s.w.p.DocumentationPluginsBootstrapper  163: Found 3 custom documentation plugin(s)
+20190411 105543 914 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 105544 213 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 105544 217 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 105544 283 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer   206: Tomcat started on port(s): 9999 (http) with context path '/sh'
+20190411 105544 290 INF - [                                ] com.sh.StartApplication                    59: Started StartApplication in 12.757 seconds (JVM running for 15.566)
+20190411 105550 846 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring FrameworkServlet 'dispatcherServlet'
+20190411 105550 846 INF - [                                ] o.s.web.servlet.DispatcherServlet         497: FrameworkServlet 'dispatcherServlet': initialization started
+20190411 105550 899 INF - [                                ] o.s.web.servlet.DispatcherServlet         512: FrameworkServlet 'dispatcherServlet': initialization completed in 53 ms
+20190411 105635 719 INF - [                                ] o.h.h.i.QueryTranslatorFactoryInitiator    47: HHH000397: Using ASTQueryTranslatorFactory
+20190411 110643 849 INF - [                                ] com.sh.StartApplication                    50: Starting StartApplication on QH-LP-384-B with PID 17124 (D:\JoinSoft\Idea\LapLap\start-ser\target\classes started by uo991 in D:\JoinSoft\Idea\LapLap)
+20190411 110643 858 INF - [                                ] com.sh.StartApplication                   654: No active profile set, falling back to default profiles: default
+20190411 110643 991 INF - [                                ] ConfigServletWebServerApplicationContext  588: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@495b0487: startup date [Thu Apr 11 11:06:43 CST 2019]; root of context hierarchy
+20190411 110646 306 INF - [                                ] o.s.i.config.IntegrationRegistrar         361: No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20190411 110646 845 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  130: No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20190411 110646 854 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  158: No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+20190411 110647 205 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$29728fb3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 110647 404 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$94644ae2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 110648 570 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer    91: Tomcat initialized with port(s): 9999 (http)
+20190411 110648 615 INF - [                                ] o.apache.catalina.core.StandardService    180: Starting service [Tomcat]
+20190411 110648 615 INF - [                                ] org.apache.catalina.core.StandardEngine   180: Starting Servlet Engine: Apache Tomcat/8.5.37
+20190411 110648 635 INF - [                                ] o.a.catalina.core.AprLifecycleListener    180: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\JoinSoft\python\Scripts\;D:\JoinSoft\python\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;D:\JoinSoft\maven\apache-maven-3.3.9\bin;D:\JoinSoftexe\Node\nvm;D:\JoinSoftexe\Node\nodejs;D:\JoinSoftexe\Node\nvm\v11.6.0;D:\Program Files\TortoiseSVN\bin;C:\Users\uo991\AppData\Local\Microsoft\WindowsApps;D:\JoinSoft\Git\Git\cmd;;.]
+20190411 110648 838 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring embedded WebApplicationContext
+20190411 110648 838 INF - [                                ] o.s.web.context.ContextLoader             296: Root WebApplicationContext: initialization completed in 4847 ms
+20190411 110648 984 INF - [                                ] o.s.b.w.servlet.ServletRegistrationBean   187: Servlet dispatcherServlet mapped to [/]
+20190411 110648 995 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'characterEncodingFilter' to: [/*]
+20190411 110648 997 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20190411 110648 999 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20190411 110649 001 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'requestContextFilter' to: [/*]
+20190411 110651 053 INF - [                                ] com.alibaba.druid.pool.DruidDataSource    928: {dataSource-1} inited
+20190411 110651 163 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 110651 195 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 110651 347 INF - [                                ] org.hibernate.Version                      45: HHH000412: Hibernate Core {5.2.17.Final}
+20190411 110651 351 INF - [                                ] org.hibernate.cfg.Environment             213: HHH000206: hibernate.properties not found
+20190411 110651 430 INF - [                                ] o.hibernate.annotations.common.Version     66: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20190411 110651 716 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+20190411 110651 831 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@1ea96ff2
+20190411 110651 832 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@1ea96ff2
+20190411 110651 833 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@2fa47368
+20190411 110651 834 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@2fa47368
+20190411 110652 683 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 110653 786 WAR - [                                ] aWebConfiguration$JpaWebMvcConfiguration  237: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20190411 110653 904 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/beijing/login/index],methods=[GET]}" onto public com.sh.common.wrapper.ResultObWrapper<com.sh.ctrl.entity.CustomerQualified> com.sh.controller.LoginController.getIndex()
+20190411 110653 908 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/sh/minhang/getMinHangList],methods=[POST]}" onto public java.lang.String com.sh.controller.shanghai.MinHangController.getMinHangList()
+20190411 110653 917 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+20190411 110653 919 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+20190411 110653 921 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+20190411 110653 925 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20190411 110653 926 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20190411 110654 245 INF - [                                ] pertySourcedRequestMappingHandlerMapping   69: Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+20190411 110654 407 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 110654 760 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerAdapter  588: Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@495b0487: startup date [Thu Apr 11 11:06:43 CST 2019]; root of context hierarchy
+20190411 110654 871 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 110654 871 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 110655 027 WAR - [                                ] ion$DefaultTemplateResolverConfiguration  107: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+20190411 110655 437 INF - [                                ] o.s.ui.freemarker.SpringTemplateLoader     62: SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@495b0487: startup date [Thu Apr 11 11:06:43 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+20190411 110655 440 INF - [                                ] o.s.w.s.v.f.FreeMarkerConfigurer          131: ClassTemplateLoader for Spring macros added to FreeMarker configuration
+20190411 110655 482 WAR - [                                ] o.s.b.a.f.FreeMarkerAutoConfiguration      70: Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+20190411 110655 645 INF - [                                ] o.s.s.c.ThreadPoolTaskScheduler           171: Initializing ExecutorService 'taskScheduler'
+20190411 110656 059 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         433: Registering beans for JMX exposure on startup
+20190411 110656 062 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         895: Bean with name 'myDataSource' has been autodetected for JMX exposure
+20190411 110656 075 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         668: Located MBean 'myDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=myDataSource,type=DruidDataSource]
+20190411 110656 097 INF - [                                ] o.s.c.support.DefaultLifecycleProcessor   356: Starting beans in phase 0
+20190411 110656 098 INF - [                                ] o.s.i.endpoint.EventDrivenConsumer        107: Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20190411 110656 098 INF - [                                ] o.s.i.channel.PublishSubscribeChannel      64: Channel 'application.errorChannel' has 1 subscriber(s).
+20190411 110656 099 INF - [                                ] o.s.i.endpoint.EventDrivenConsumer        165: started _org.springframework.integration.errorLogger
+20190411 110656 099 INF - [                                ] o.s.c.support.DefaultLifecycleProcessor   356: Starting beans in phase 2147483647
+20190411 110656 099 INF - [                                ] d.s.w.p.DocumentationPluginsBootstrapper  160: Context refreshed
+20190411 110656 131 INF - [                                ] d.s.w.p.DocumentationPluginsBootstrapper  163: Found 3 custom documentation plugin(s)
+20190411 110656 184 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 110656 493 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 110656 499 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 110656 569 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer   206: Tomcat started on port(s): 9999 (http) with context path '/sh'
+20190411 110656 578 INF - [                                ] com.sh.StartApplication                    59: Started StartApplication in 13.484 seconds (JVM running for 15.84)
+20190411 110718 947 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring FrameworkServlet 'dispatcherServlet'
+20190411 110718 948 INF - [                                ] o.s.web.servlet.DispatcherServlet         497: FrameworkServlet 'dispatcherServlet': initialization started
+20190411 110718 999 INF - [                                ] o.s.web.servlet.DispatcherServlet         512: FrameworkServlet 'dispatcherServlet': initialization completed in 51 ms
+20190411 110719 194 INF - [                                ] o.h.h.i.QueryTranslatorFactoryInitiator    47: HHH000397: Using ASTQueryTranslatorFactory
+20190411 150406 582 INF - [                                ] com.sh.StartApplication                    50: Starting StartApplication on QH-LP-384-B with PID 2812 (D:\JoinSoft\Idea\LapLap\start-ser\target\classes started by uo991 in D:\JoinSoft\Idea\LapLap)
+20190411 150406 588 INF - [                                ] com.sh.StartApplication                   654: No active profile set, falling back to default profiles: default
+20190411 150406 692 INF - [                                ] ConfigServletWebServerApplicationContext  588: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55dfcc6: startup date [Thu Apr 11 15:04:06 CST 2019]; root of context hierarchy
+20190411 150408 707 INF - [                                ] o.s.i.config.IntegrationRegistrar         361: No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20190411 150409 256 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  130: No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20190411 150409 266 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  158: No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+20190411 150409 658 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$22e3e843] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 150409 901 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$8dd5a372] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 150411 277 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer    91: Tomcat initialized with port(s): 9999 (http)
+20190411 150411 323 INF - [                                ] o.apache.catalina.core.StandardService    180: Starting service [Tomcat]
+20190411 150411 324 INF - [                                ] org.apache.catalina.core.StandardEngine   180: Starting Servlet Engine: Apache Tomcat/8.5.37
+20190411 150411 344 INF - [                                ] o.a.catalina.core.AprLifecycleListener    180: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\JoinSoft\python\Scripts\;D:\JoinSoft\python\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;D:\JoinSoft\maven\apache-maven-3.3.9\bin;D:\JoinSoftexe\Node\nvm;D:\JoinSoftexe\Node\nodejs;D:\JoinSoftexe\Node\nvm\v11.6.0;D:\Program Files\TortoiseSVN\bin;C:\Users\uo991\AppData\Local\Microsoft\WindowsApps;D:\JoinSoft\Git\Git\cmd;;.]
+20190411 150411 562 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring embedded WebApplicationContext
+20190411 150411 564 INF - [                                ] o.s.web.context.ContextLoader             296: Root WebApplicationContext: initialization completed in 4872 ms
+20190411 150411 702 INF - [                                ] o.s.b.w.servlet.ServletRegistrationBean   187: Servlet dispatcherServlet mapped to [/]
+20190411 150411 709 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'characterEncodingFilter' to: [/*]
+20190411 150411 710 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20190411 150411 710 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20190411 150411 711 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'requestContextFilter' to: [/*]
+20190411 150412 121 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 150412 154 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 150412 371 INF - [                                ] org.hibernate.Version                      45: HHH000412: Hibernate Core {5.2.17.Final}
+20190411 150412 375 INF - [                                ] org.hibernate.cfg.Environment             213: HHH000206: hibernate.properties not found
+20190411 150412 392 WAR - [                                ] .h.j.b.i.EntityManagerFactoryBuilderImpl  604: HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+20190411 150412 465 INF - [                                ] o.hibernate.annotations.common.Version     66: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20190411 150414 126 INF - [                                ] com.alibaba.druid.pool.DruidDataSource    928: {dataSource-1} inited
+20190411 150414 170 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+20190411 150414 655 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 150414 674 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 150414 674 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 150414 677 WAR - [                                ] .h.j.b.i.EntityManagerFactoryBuilderImpl  604: HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+20190411 150414 688 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+20190411 150414 737 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 150422 752 WAR - [                                ] ConfigServletWebServerApplicationContext  556: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through method 'setCustomerQualifiedApi' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerQualifiedApi': Unsatisfied dependency expressed through method 'setCustomerQualifiedService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerQualifiedServiceImpl': Unsatisfied dependency expressed through method 'setCustomerQualifiedDao' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerQualifiedDao': Cannot create inner bean '(inner bean)#2e030cc1' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#2e030cc1': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+20190411 150422 754 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  597: Closing JPA EntityManagerFactory for persistence unit 'default'
+20190411 150422 780 INF - [                                ] com.alibaba.druid.pool.DruidDataSource   1823: {dataSource-1} closed
+20190411 150422 787 INF - [                                ] o.apache.catalina.core.StandardService    180: Stopping service [Tomcat]
+20190411 150422 831 INF - [                                ] ConditionEvaluationReportLoggingListener  142: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20190411 150423 004 ERR - [                                ] o.s.b.d.LoggingFailureAnalysisReporter     42: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setCustomerQualifiedDao in com.sh.ctrl.imp.CustomerQualifiedServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+20190411 150436 749 INF - [                                ] com.sh.StartApplication                    50: Starting StartApplication on QH-LP-384-B with PID 17036 (D:\JoinSoft\Idea\LapLap\start-ser\target\classes started by uo991 in D:\JoinSoft\Idea\LapLap)
+20190411 150436 759 INF - [                                ] com.sh.StartApplication                   654: No active profile set, falling back to default profiles: default
+20190411 150436 867 INF - [                                ] ConfigServletWebServerApplicationContext  588: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@51acdf2e: startup date [Thu Apr 11 15:04:36 CST 2019]; root of context hierarchy
+20190411 150439 244 INF - [                                ] o.s.i.config.IntegrationRegistrar         361: No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20190411 150439 878 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  130: No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20190411 150439 889 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  158: No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+20190411 150440 260 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$342ec746] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 150440 443 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$9f208275] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 150441 747 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer    91: Tomcat initialized with port(s): 9999 (http)
+20190411 150441 803 INF - [                                ] o.apache.catalina.core.StandardService    180: Starting service [Tomcat]
+20190411 150441 804 INF - [                                ] org.apache.catalina.core.StandardEngine   180: Starting Servlet Engine: Apache Tomcat/8.5.37
+20190411 150441 821 INF - [                                ] o.a.catalina.core.AprLifecycleListener    180: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\JoinSoft\python\Scripts\;D:\JoinSoft\python\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;D:\JoinSoft\maven\apache-maven-3.3.9\bin;D:\JoinSoftexe\Node\nvm;D:\JoinSoftexe\Node\nodejs;D:\JoinSoftexe\Node\nvm\v11.6.0;D:\Program Files\TortoiseSVN\bin;C:\Users\uo991\AppData\Local\Microsoft\WindowsApps;D:\JoinSoft\Git\Git\cmd;;.]
+20190411 150442 030 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring embedded WebApplicationContext
+20190411 150442 030 INF - [                                ] o.s.web.context.ContextLoader             296: Root WebApplicationContext: initialization completed in 5163 ms
+20190411 150442 171 INF - [                                ] o.s.b.w.servlet.ServletRegistrationBean   187: Servlet dispatcherServlet mapped to [/]
+20190411 150442 178 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'characterEncodingFilter' to: [/*]
+20190411 150442 179 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20190411 150442 179 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20190411 150442 180 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'requestContextFilter' to: [/*]
+20190411 150442 522 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 150442 551 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 150442 721 INF - [                                ] org.hibernate.Version                      45: HHH000412: Hibernate Core {5.2.17.Final}
+20190411 150442 726 INF - [                                ] org.hibernate.cfg.Environment             213: HHH000206: hibernate.properties not found
+20190411 150442 750 WAR - [                                ] .h.j.b.i.EntityManagerFactoryBuilderImpl  604: HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+20190411 150442 807 INF - [                                ] o.hibernate.annotations.common.Version     66: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20190411 150444 451 INF - [                                ] com.alibaba.druid.pool.DruidDataSource    928: {dataSource-1} inited
+20190411 150444 478 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+20190411 150444 882 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 150444 906 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 150444 907 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 150444 910 WAR - [                                ] .h.j.b.i.EntityManagerFactoryBuilderImpl  604: HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+20190411 150444 921 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+20190411 150444 971 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 150447 216 WAR - [                                ] ConfigServletWebServerApplicationContext  556: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through method 'setCustomerQualifiedApi' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerQualifiedApi': Unsatisfied dependency expressed through method 'setCustomerQualifiedService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerQualifiedServiceImpl': Unsatisfied dependency expressed through method 'setCustomerQualifiedDao' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerQualifiedDao': Cannot create inner bean '(inner bean)#533d7c61' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#533d7c61': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+20190411 150447 218 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  597: Closing JPA EntityManagerFactory for persistence unit 'default'
+20190411 150447 240 INF - [                                ] com.alibaba.druid.pool.DruidDataSource   1823: {dataSource-1} closed
+20190411 150447 245 INF - [                                ] o.apache.catalina.core.StandardService    180: Stopping service [Tomcat]
+20190411 150447 267 INF - [                                ] ConditionEvaluationReportLoggingListener  142: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20190411 150447 491 ERR - [                                ] o.s.b.d.LoggingFailureAnalysisReporter     42: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setCustomerQualifiedDao in com.sh.ctrl.imp.CustomerQualifiedServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+20190411 150544 004 INF - [                                ] com.sh.StartApplication                    50: Starting StartApplication on QH-LP-384-B with PID 16888 (D:\JoinSoft\Idea\LapLap\start-ser\target\classes started by uo991 in D:\JoinSoft\Idea\LapLap)
+20190411 150544 015 INF - [                                ] com.sh.StartApplication                   654: No active profile set, falling back to default profiles: default
+20190411 150544 146 INF - [                                ] ConfigServletWebServerApplicationContext  588: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@495b0487: startup date [Thu Apr 11 15:05:44 CST 2019]; root of context hierarchy
+20190411 150546 191 INF - [                                ] o.s.i.config.IntegrationRegistrar         361: No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20190411 150546 795 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  130: No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20190411 150546 809 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  158: No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+20190411 150547 187 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ae1e2562] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 150547 412 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$190fe091] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 150548 837 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer    91: Tomcat initialized with port(s): 9999 (http)
+20190411 150548 896 INF - [                                ] o.apache.catalina.core.StandardService    180: Starting service [Tomcat]
+20190411 150548 897 INF - [                                ] org.apache.catalina.core.StandardEngine   180: Starting Servlet Engine: Apache Tomcat/8.5.37
+20190411 150548 917 INF - [                                ] o.a.catalina.core.AprLifecycleListener    180: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\JoinSoft\python\Scripts\;D:\JoinSoft\python\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;D:\JoinSoft\maven\apache-maven-3.3.9\bin;D:\JoinSoftexe\Node\nvm;D:\JoinSoftexe\Node\nodejs;D:\JoinSoftexe\Node\nvm\v11.6.0;D:\Program Files\TortoiseSVN\bin;C:\Users\uo991\AppData\Local\Microsoft\WindowsApps;D:\JoinSoft\Git\Git\cmd;;.]
+20190411 150549 196 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring embedded WebApplicationContext
+20190411 150549 197 INF - [                                ] o.s.web.context.ContextLoader             296: Root WebApplicationContext: initialization completed in 5051 ms
+20190411 150549 341 INF - [                                ] o.s.b.w.servlet.ServletRegistrationBean   187: Servlet dispatcherServlet mapped to [/]
+20190411 150549 349 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'characterEncodingFilter' to: [/*]
+20190411 150549 350 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20190411 150549 350 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20190411 150549 350 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'requestContextFilter' to: [/*]
+20190411 150549 756 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 150549 795 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 150549 985 INF - [                                ] org.hibernate.Version                      45: HHH000412: Hibernate Core {5.2.17.Final}
+20190411 150549 988 INF - [                                ] org.hibernate.cfg.Environment             213: HHH000206: hibernate.properties not found
+20190411 150550 007 WAR - [                                ] .h.j.b.i.EntityManagerFactoryBuilderImpl  604: HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+20190411 150550 165 INF - [                                ] o.hibernate.annotations.common.Version     66: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20190411 150552 459 INF - [                                ] com.alibaba.druid.pool.DruidDataSource    928: {dataSource-1} inited
+20190411 150552 513 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+20190411 150553 351 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 150553 375 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 150553 376 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 150553 379 WAR - [                                ] .h.j.b.i.EntityManagerFactoryBuilderImpl  604: HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+20190411 150553 393 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+20190411 150553 441 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 150555 631 WAR - [                                ] ConfigServletWebServerApplicationContext  556: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through method 'setCustomerQualifiedApi' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerQualifiedApi': Unsatisfied dependency expressed through method 'setCustomerQualifiedService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerQualifiedServiceImpl': Unsatisfied dependency expressed through method 'setCustomerQualifiedDao' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerQualifiedDao': Cannot create inner bean '(inner bean)#79424f25' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#79424f25': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+20190411 150555 633 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  597: Closing JPA EntityManagerFactory for persistence unit 'default'
+20190411 150555 656 INF - [                                ] com.alibaba.druid.pool.DruidDataSource   1823: {dataSource-1} closed
+20190411 150555 663 INF - [                                ] o.apache.catalina.core.StandardService    180: Stopping service [Tomcat]
+20190411 150555 696 INF - [                                ] ConditionEvaluationReportLoggingListener  142: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20190411 150555 795 ERR - [                                ] o.s.b.d.LoggingFailureAnalysisReporter     42: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setCustomerQualifiedDao in com.sh.ctrl.imp.CustomerQualifiedServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+20190411 150721 145 INF - [                                ] com.sh.StartApplication                    50: Starting StartApplication on QH-LP-384-B with PID 13720 (D:\JoinSoft\Idea\LapLap\start-ser\target\classes started by uo991 in D:\JoinSoft\Idea\LapLap)
+20190411 150721 153 INF - [                                ] com.sh.StartApplication                   654: No active profile set, falling back to default profiles: default
+20190411 150721 286 INF - [                                ] ConfigServletWebServerApplicationContext  588: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@76012793: startup date [Thu Apr 11 15:07:21 CST 2019]; root of context hierarchy
+20190411 150723 311 INF - [                                ] o.s.i.config.IntegrationRegistrar         361: No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20190411 150723 811 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  130: No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20190411 150723 821 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  158: No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+20190411 150724 113 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8b2d3433] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 150724 257 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$f61eef62] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 150725 470 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer    91: Tomcat initialized with port(s): 9999 (http)
+20190411 150725 514 INF - [                                ] o.apache.catalina.core.StandardService    180: Starting service [Tomcat]
+20190411 150725 514 INF - [                                ] org.apache.catalina.core.StandardEngine   180: Starting Servlet Engine: Apache Tomcat/8.5.37
+20190411 150725 530 INF - [                                ] o.a.catalina.core.AprLifecycleListener    180: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\JoinSoft\python\Scripts\;D:\JoinSoft\python\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;D:\JoinSoft\maven\apache-maven-3.3.9\bin;D:\JoinSoftexe\Node\nvm;D:\JoinSoftexe\Node\nodejs;D:\JoinSoftexe\Node\nvm\v11.6.0;D:\Program Files\TortoiseSVN\bin;C:\Users\uo991\AppData\Local\Microsoft\WindowsApps;D:\JoinSoft\Git\Git\cmd;;.]
+20190411 150725 722 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring embedded WebApplicationContext
+20190411 150725 722 INF - [                                ] o.s.web.context.ContextLoader             296: Root WebApplicationContext: initialization completed in 4436 ms
+20190411 150725 859 INF - [                                ] o.s.b.w.servlet.ServletRegistrationBean   187: Servlet dispatcherServlet mapped to [/]
+20190411 150725 866 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'characterEncodingFilter' to: [/*]
+20190411 150725 867 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20190411 150725 868 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20190411 150725 868 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'requestContextFilter' to: [/*]
+20190411 150726 247 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 150726 276 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 150726 423 INF - [                                ] org.hibernate.Version                      45: HHH000412: Hibernate Core {5.2.17.Final}
+20190411 150726 425 INF - [                                ] org.hibernate.cfg.Environment             213: HHH000206: hibernate.properties not found
+20190411 150726 439 WAR - [                                ] .h.j.b.i.EntityManagerFactoryBuilderImpl  604: HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+20190411 150726 500 INF - [                                ] o.hibernate.annotations.common.Version     66: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20190411 150728 142 INF - [                                ] com.alibaba.druid.pool.DruidDataSource    928: {dataSource-1} inited
+20190411 150728 162 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+20190411 150728 575 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 150732 078 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 150732 078 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 150732 084 WAR - [                                ] .h.j.b.i.EntityManagerFactoryBuilderImpl  604: HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+20190411 150732 094 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+20190411 150732 141 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 150742 142 WAR - [                                ] ConfigServletWebServerApplicationContext  556: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through method 'setCustomerQualifiedApi' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerQualifiedApi': Unsatisfied dependency expressed through method 'setCustomerQualifiedService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerQualifiedServiceImpl': Unsatisfied dependency expressed through method 'setCustomerQualifiedDao' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerQualifiedDao': Cannot create inner bean '(inner bean)#4fc71437' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#4fc71437': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+20190411 150742 143 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  597: Closing JPA EntityManagerFactory for persistence unit 'default'
+20190411 150742 166 INF - [                                ] com.alibaba.druid.pool.DruidDataSource   1823: {dataSource-1} closed
+20190411 150742 171 INF - [                                ] o.apache.catalina.core.StandardService    180: Stopping service [Tomcat]
+20190411 150742 202 INF - [                                ] ConditionEvaluationReportLoggingListener  142: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20190411 150742 305 ERR - [                                ] o.s.b.d.LoggingFailureAnalysisReporter     42: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setCustomerQualifiedDao in com.sh.ctrl.imp.CustomerQualifiedServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+20190411 150913 088 INF - [                                ] com.sh.StartApplication                    50: Starting StartApplication on QH-LP-384-B with PID 13392 (D:\JoinSoft\Idea\LapLap\start-ser\target\classes started by uo991 in D:\JoinSoft\Idea\LapLap)
+20190411 150913 100 INF - [                                ] com.sh.StartApplication                   654: No active profile set, falling back to default profiles: default
+20190411 150913 285 INF - [                                ] ConfigServletWebServerApplicationContext  588: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6bbe2511: startup date [Thu Apr 11 15:09:13 CST 2019]; root of context hierarchy
+20190411 150916 257 INF - [                                ] o.s.i.config.IntegrationRegistrar         361: No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20190411 150916 747 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  130: No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20190411 150916 754 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  158: No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+20190411 150917 044 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2dbbd53f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 150917 195 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$98ad906e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 150918 497 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer    91: Tomcat initialized with port(s): 9999 (http)
+20190411 150918 555 INF - [                                ] o.apache.catalina.core.StandardService    180: Starting service [Tomcat]
+20190411 150918 556 INF - [                                ] org.apache.catalina.core.StandardEngine   180: Starting Servlet Engine: Apache Tomcat/8.5.37
+20190411 150918 577 INF - [                                ] o.a.catalina.core.AprLifecycleListener    180: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\JoinSoft\python\Scripts\;D:\JoinSoft\python\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;D:\JoinSoft\maven\apache-maven-3.3.9\bin;D:\JoinSoftexe\Node\nvm;D:\JoinSoftexe\Node\nodejs;D:\JoinSoftexe\Node\nvm\v11.6.0;D:\Program Files\TortoiseSVN\bin;C:\Users\uo991\AppData\Local\Microsoft\WindowsApps;D:\JoinSoft\Git\Git\cmd;;.]
+20190411 150918 817 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring embedded WebApplicationContext
+20190411 150918 817 INF - [                                ] o.s.web.context.ContextLoader             296: Root WebApplicationContext: initialization completed in 5532 ms
+20190411 150918 972 INF - [                                ] o.s.b.w.servlet.ServletRegistrationBean   187: Servlet dispatcherServlet mapped to [/]
+20190411 150918 980 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'characterEncodingFilter' to: [/*]
+20190411 150918 980 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20190411 150918 982 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20190411 150918 982 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'requestContextFilter' to: [/*]
+20190411 150919 393 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 150919 425 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 150919 593 INF - [                                ] org.hibernate.Version                      45: HHH000412: Hibernate Core {5.2.17.Final}
+20190411 150919 596 INF - [                                ] org.hibernate.cfg.Environment             213: HHH000206: hibernate.properties not found
+20190411 150919 619 WAR - [                                ] .h.j.b.i.EntityManagerFactoryBuilderImpl  604: HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+20190411 150919 705 INF - [                                ] o.hibernate.annotations.common.Version     66: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20190411 150921 330 INF - [                                ] com.alibaba.druid.pool.DruidDataSource    928: {dataSource-1} inited
+20190411 150921 356 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+20190411 150921 777 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 150923 749 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 150923 749 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 150923 753 WAR - [                                ] .h.j.b.i.EntityManagerFactoryBuilderImpl  604: HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+20190411 150923 765 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+20190411 150923 816 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 150925 339 WAR - [                                ] ConfigServletWebServerApplicationContext  556: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through method 'setCustomerQualifiedApi' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerQualifiedApi': Unsatisfied dependency expressed through method 'setCustomerQualifiedService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerQualifiedServiceImpl': Unsatisfied dependency expressed through method 'setCustomerQualifiedDao' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerQualifiedDao': Cannot create inner bean '(inner bean)#663cf5d7' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#663cf5d7': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+20190411 150925 341 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  597: Closing JPA EntityManagerFactory for persistence unit 'default'
+20190411 150925 370 INF - [                                ] com.alibaba.druid.pool.DruidDataSource   1823: {dataSource-1} closed
+20190411 150925 377 INF - [                                ] o.apache.catalina.core.StandardService    180: Stopping service [Tomcat]
+20190411 150925 418 INF - [                                ] ConditionEvaluationReportLoggingListener  142: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20190411 150925 616 ERR - [                                ] o.s.b.d.LoggingFailureAnalysisReporter     42: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setCustomerQualifiedDao in com.sh.ctrl.imp.CustomerQualifiedServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+20190411 151041 522 INF - [                                ] com.sh.StartApplication                    50: Starting StartApplication on QH-LP-384-B with PID 16368 (D:\JoinSoft\Idea\LapLap\start-ser\target\classes started by uo991 in D:\JoinSoft\Idea\LapLap)
+20190411 151041 534 INF - [                                ] com.sh.StartApplication                   654: No active profile set, falling back to default profiles: default
+20190411 151041 672 INF - [                                ] ConfigServletWebServerApplicationContext  588: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@495b0487: startup date [Thu Apr 11 15:10:41 CST 2019]; root of context hierarchy
+20190411 151043 737 INF - [                                ] o.s.i.config.IntegrationRegistrar         361: No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20190411 151044 299 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  130: No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20190411 151044 309 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  158: No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+20190411 151044 647 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7712ee6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 151044 813 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$1262ea15] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 151045 891 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer    91: Tomcat initialized with port(s): 9999 (http)
+20190411 151045 945 INF - [                                ] o.apache.catalina.core.StandardService    180: Starting service [Tomcat]
+20190411 151045 946 INF - [                                ] org.apache.catalina.core.StandardEngine   180: Starting Servlet Engine: Apache Tomcat/8.5.37
+20190411 151045 965 INF - [                                ] o.a.catalina.core.AprLifecycleListener    180: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\JoinSoft\python\Scripts\;D:\JoinSoft\python\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;D:\JoinSoft\maven\apache-maven-3.3.9\bin;D:\JoinSoftexe\Node\nvm;D:\JoinSoftexe\Node\nodejs;D:\JoinSoftexe\Node\nvm\v11.6.0;D:\Program Files\TortoiseSVN\bin;C:\Users\uo991\AppData\Local\Microsoft\WindowsApps;D:\JoinSoft\Git\Git\cmd;;.]
+20190411 151046 193 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring embedded WebApplicationContext
+20190411 151046 194 INF - [                                ] o.s.web.context.ContextLoader             296: Root WebApplicationContext: initialization completed in 4522 ms
+20190411 151046 335 INF - [                                ] o.s.b.w.servlet.ServletRegistrationBean   187: Servlet dispatcherServlet mapped to [/]
+20190411 151046 343 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'characterEncodingFilter' to: [/*]
+20190411 151046 344 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20190411 151046 345 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20190411 151046 345 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'requestContextFilter' to: [/*]
+20190411 151048 227 INF - [                                ] com.alibaba.druid.pool.DruidDataSource    928: {dataSource-1} inited
+20190411 151048 345 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 151048 379 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 151048 532 INF - [                                ] org.hibernate.Version                      45: HHH000412: Hibernate Core {5.2.17.Final}
+20190411 151048 536 INF - [                                ] org.hibernate.cfg.Environment             213: HHH000206: hibernate.properties not found
+20190411 151048 612 INF - [                                ] o.hibernate.annotations.common.Version     66: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20190411 151048 907 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+20190411 151049 009 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@6eb00cbe
+20190411 151049 010 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@6eb00cbe
+20190411 151049 011 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@c30f26d
+20190411 151049 011 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@c30f26d
+20190411 151049 943 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 151051 239 WAR - [                                ] aWebConfiguration$JpaWebMvcConfiguration  237: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20190411 151051 365 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/beijing/login/index],methods=[GET]}" onto public com.sh.common.wrapper.ResultObWrapper<com.sh.ctrl.entity.CustomerQualified> com.sh.controller.LoginController.getIndex()
+20190411 151051 369 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/sh/minhang/getMinHangList],methods=[POST]}" onto public java.lang.String com.sh.controller.shanghai.MinHangController.getMinHangList()
+20190411 151051 375 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+20190411 151051 376 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+20190411 151051 378 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+20190411 151051 383 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20190411 151051 384 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20190411 151051 701 INF - [                                ] pertySourcedRequestMappingHandlerMapping   69: Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+20190411 151051 861 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 151052 217 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerAdapter  588: Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@495b0487: startup date [Thu Apr 11 15:10:41 CST 2019]; root of context hierarchy
+20190411 151052 315 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 151052 315 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 151052 443 WAR - [                                ] ion$DefaultTemplateResolverConfiguration  107: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+20190411 151052 851 INF - [                                ] o.s.ui.freemarker.SpringTemplateLoader     62: SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@495b0487: startup date [Thu Apr 11 15:10:41 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+20190411 151052 853 INF - [                                ] o.s.w.s.v.f.FreeMarkerConfigurer          131: ClassTemplateLoader for Spring macros added to FreeMarker configuration
+20190411 151052 882 WAR - [                                ] o.s.b.a.f.FreeMarkerAutoConfiguration      70: Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+20190411 151053 064 INF - [                                ] o.s.s.c.ThreadPoolTaskScheduler           171: Initializing ExecutorService 'taskScheduler'
+20190411 151053 423 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         433: Registering beans for JMX exposure on startup
+20190411 151053 425 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         895: Bean with name 'myDataSource' has been autodetected for JMX exposure
+20190411 151053 435 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         668: Located MBean 'myDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=myDataSource,type=DruidDataSource]
+20190411 151053 456 INF - [                                ] o.s.c.support.DefaultLifecycleProcessor   356: Starting beans in phase 0
+20190411 151053 457 INF - [                                ] o.s.i.endpoint.EventDrivenConsumer        107: Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20190411 151053 458 INF - [                                ] o.s.i.channel.PublishSubscribeChannel      64: Channel 'application.errorChannel' has 1 subscriber(s).
+20190411 151053 458 INF - [                                ] o.s.i.endpoint.EventDrivenConsumer        165: started _org.springframework.integration.errorLogger
+20190411 151053 458 INF - [                                ] o.s.c.support.DefaultLifecycleProcessor   356: Starting beans in phase 2147483647
+20190411 151053 459 INF - [                                ] d.s.w.p.DocumentationPluginsBootstrapper  160: Context refreshed
+20190411 151053 495 INF - [                                ] d.s.w.p.DocumentationPluginsBootstrapper  163: Found 3 custom documentation plugin(s)
+20190411 151053 557 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 151053 866 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 151053 871 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 151053 929 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer   206: Tomcat started on port(s): 9999 (http) with context path '/sh'
+20190411 151053 936 INF - [                                ] com.sh.StartApplication                    59: Started StartApplication in 13.143 seconds (JVM running for 15.889)
+20190411 151106 466 INF - [                                ] com.sh.StartApplication                    50: Starting StartApplication on QH-LP-384-B with PID 7232 (D:\JoinSoft\Idea\LapLap\start-ser\target\classes started by uo991 in D:\JoinSoft\Idea\LapLap)
+20190411 151106 473 INF - [                                ] com.sh.StartApplication                   654: No active profile set, falling back to default profiles: default
+20190411 151106 616 INF - [                                ] ConfigServletWebServerApplicationContext  588: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3212a8d7: startup date [Thu Apr 11 15:11:06 CST 2019]; root of context hierarchy
+20190411 151108 548 INF - [                                ] o.s.i.config.IntegrationRegistrar         361: No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20190411 151109 091 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  130: No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20190411 151109 100 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  158: No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+20190411 151109 405 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2d00e064] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 151109 569 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$97f29b93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 151110 659 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer    91: Tomcat initialized with port(s): 9999 (http)
+20190411 151110 703 INF - [                                ] o.apache.catalina.core.StandardService    180: Starting service [Tomcat]
+20190411 151110 704 INF - [                                ] org.apache.catalina.core.StandardEngine   180: Starting Servlet Engine: Apache Tomcat/8.5.37
+20190411 151110 721 INF - [                                ] o.a.catalina.core.AprLifecycleListener    180: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\JoinSoft\python\Scripts\;D:\JoinSoft\python\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;D:\JoinSoft\maven\apache-maven-3.3.9\bin;D:\JoinSoftexe\Node\nvm;D:\JoinSoftexe\Node\nodejs;D:\JoinSoftexe\Node\nvm\v11.6.0;D:\Program Files\TortoiseSVN\bin;C:\Users\uo991\AppData\Local\Microsoft\WindowsApps;D:\JoinSoft\Git\Git\cmd;;.]
+20190411 151110 915 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring embedded WebApplicationContext
+20190411 151110 916 INF - [                                ] o.s.web.context.ContextLoader             296: Root WebApplicationContext: initialization completed in 4300 ms
+20190411 151111 049 INF - [                                ] o.s.b.w.servlet.ServletRegistrationBean   187: Servlet dispatcherServlet mapped to [/]
+20190411 151111 057 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'characterEncodingFilter' to: [/*]
+20190411 151111 059 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20190411 151111 060 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20190411 151111 060 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'requestContextFilter' to: [/*]
+20190411 151112 959 INF - [                                ] com.alibaba.druid.pool.DruidDataSource    928: {dataSource-1} inited
+20190411 151113 093 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 151113 123 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 151113 308 INF - [                                ] org.hibernate.Version                      45: HHH000412: Hibernate Core {5.2.17.Final}
+20190411 151113 311 INF - [                                ] org.hibernate.cfg.Environment             213: HHH000206: hibernate.properties not found
+20190411 151113 389 INF - [                                ] o.hibernate.annotations.common.Version     66: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20190411 151113 669 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+20190411 151113 769 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@4bbc02ef
+20190411 151113 769 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@4bbc02ef
+20190411 151113 770 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@1d9ff1e2
+20190411 151113 770 INF - [                                ] org.hibernate.type.BasicTypeRegistry      148: HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@1d9ff1e2
+20190411 151114 636 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 151125 627 WAR - [                                ] aWebConfiguration$JpaWebMvcConfiguration  237: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20190411 151125 747 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/beijing/login/index],methods=[GET]}" onto public com.sh.common.wrapper.ResultObWrapper<com.sh.ctrl.entity.CustomerQualified> com.sh.controller.LoginController.getIndex()
+20190411 151125 754 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/sh/minhang/getMinHangList],methods=[POST]}" onto public java.lang.String com.sh.controller.shanghai.MinHangController.getMinHangList()
+20190411 151125 761 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+20190411 151125 763 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+20190411 151125 765 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+20190411 151125 770 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20190411 151125 771 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerMapping  550: Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20190411 151126 130 INF - [                                ] pertySourcedRequestMappingHandlerMapping   69: Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+20190411 151126 313 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 151126 768 INF - [                                ] s.w.s.m.m.a.RequestMappingHandlerAdapter  588: Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3212a8d7: startup date [Thu Apr 11 15:11:06 CST 2019]; root of context hierarchy
+20190411 151126 878 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 151126 879 INF - [                                ] o.s.w.s.handler.SimpleUrlHandlerMapping   373: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20190411 151127 013 WAR - [                                ] ion$DefaultTemplateResolverConfiguration  107: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+20190411 151127 453 INF - [                                ] o.s.ui.freemarker.SpringTemplateLoader     62: SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3212a8d7: startup date [Thu Apr 11 15:11:06 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+20190411 151127 455 INF - [                                ] o.s.w.s.v.f.FreeMarkerConfigurer          131: ClassTemplateLoader for Spring macros added to FreeMarker configuration
+20190411 151127 488 WAR - [                                ] o.s.b.a.f.FreeMarkerAutoConfiguration      70: Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+20190411 151127 625 INF - [                                ] o.s.s.c.ThreadPoolTaskScheduler           171: Initializing ExecutorService 'taskScheduler'
+20190411 151128 072 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         433: Registering beans for JMX exposure on startup
+20190411 151128 075 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         895: Bean with name 'myDataSource' has been autodetected for JMX exposure
+20190411 151128 091 INF - [                                ] o.s.j.e.a.AnnotationMBeanExporter         668: Located MBean 'myDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=myDataSource,type=DruidDataSource]
+20190411 151128 109 INF - [                                ] o.s.c.support.DefaultLifecycleProcessor   356: Starting beans in phase 0
+20190411 151128 111 INF - [                                ] o.s.i.endpoint.EventDrivenConsumer        107: Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20190411 151128 111 INF - [                                ] o.s.i.channel.PublishSubscribeChannel      64: Channel 'application.errorChannel' has 1 subscriber(s).
+20190411 151128 112 INF - [                                ] o.s.i.endpoint.EventDrivenConsumer        165: started _org.springframework.integration.errorLogger
+20190411 151128 113 INF - [                                ] o.s.c.support.DefaultLifecycleProcessor   356: Starting beans in phase 2147483647
+20190411 151128 113 INF - [                                ] d.s.w.p.DocumentationPluginsBootstrapper  160: Context refreshed
+20190411 151128 140 INF - [                                ] d.s.w.p.DocumentationPluginsBootstrapper  163: Found 3 custom documentation plugin(s)
+20190411 151128 206 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 151128 468 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 151128 475 INF - [                                ] s.d.s.w.s.ApiListingReferenceScanner       41: Scanning for api listing references
+20190411 151128 534 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer   206: Tomcat started on port(s): 9999 (http) with context path '/sh'
+20190411 151128 541 INF - [                                ] com.sh.StartApplication                    59: Started StartApplication in 22.801 seconds (JVM running for 25.15)
+20190411 151435 320 INF - [                                ] com.sh.StartApplication                    50: Starting StartApplication on QH-LP-384-B with PID 16580 (D:\JoinSoft\Idea\LapLap\start-ser\target\classes started by uo991 in D:\JoinSoft\Idea\LapLap)
+20190411 151435 330 INF - [                                ] com.sh.StartApplication                   654: No active profile set, falling back to default profiles: default
+20190411 151435 456 INF - [                                ] ConfigServletWebServerApplicationContext  588: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79179359: startup date [Thu Apr 11 15:14:35 CST 2019]; root of context hierarchy
+20190411 151437 634 INF - [                                ] o.s.i.config.IntegrationRegistrar         361: No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20190411 151438 369 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  130: No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20190411 151438 391 INF - [                                ] faultConfiguringBeanFactoryPostProcessor  158: No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+20190411 151438 806 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f6c3593c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 151439 005 INF - [                                ] trationDelegate$BeanPostProcessorChecker  326: Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$61b5146b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20190411 151440 323 INF - [                                ] o.s.b.w.embedded.tomcat.TomcatWebServer    91: Tomcat initialized with port(s): 9999 (http)
+20190411 151440 385 INF - [                                ] o.apache.catalina.core.StandardService    180: Starting service [Tomcat]
+20190411 151440 385 INF - [                                ] org.apache.catalina.core.StandardEngine   180: Starting Servlet Engine: Apache Tomcat/8.5.37
+20190411 151440 402 INF - [                                ] o.a.catalina.core.AprLifecycleListener    180: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\JoinSoft\python\Scripts\;D:\JoinSoft\python\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;D:\JoinSoft\maven\apache-maven-3.3.9\bin;D:\JoinSoftexe\Node\nvm;D:\JoinSoftexe\Node\nodejs;D:\JoinSoftexe\Node\nvm\v11.6.0;D:\Program Files\TortoiseSVN\bin;C:\Users\uo991\AppData\Local\Microsoft\WindowsApps;D:\JoinSoft\Git\Git\cmd;;.]
+20190411 151440 589 INF - [                                ] o.a.c.c.C.[Tomcat].[localhost].[/sh]      180: Initializing Spring embedded WebApplicationContext
+20190411 151440 590 INF - [                                ] o.s.web.context.ContextLoader             296: Root WebApplicationContext: initialization completed in 5134 ms
+20190411 151440 724 INF - [                                ] o.s.b.w.servlet.ServletRegistrationBean   187: Servlet dispatcherServlet mapped to [/]
+20190411 151440 731 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'characterEncodingFilter' to: [/*]
+20190411 151440 733 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20190411 151440 733 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20190411 151440 733 INF - [                                ] o.s.b.w.servlet.FilterRegistrationBean    245: Mapping filter: 'requestContextFilter' to: [/*]
+20190411 151441 096 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 151441 139 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 151441 367 INF - [                                ] org.hibernate.Version                      45: HHH000412: Hibernate Core {5.2.17.Final}
+20190411 151441 370 INF - [                                ] org.hibernate.cfg.Environment             213: HHH000206: hibernate.properties not found
+20190411 151441 386 WAR - [                                ] .h.j.b.i.EntityManagerFactoryBuilderImpl  604: HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+20190411 151441 499 INF - [                                ] o.hibernate.annotations.common.Version     66: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20190411 151443 406 INF - [                                ] com.alibaba.druid.pool.DruidDataSource    928: {dataSource-1} inited
+20190411 151443 436 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+20190411 151443 990 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 151444 010 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  361: Building JPA container EntityManagerFactory for persistence unit 'default'
+20190411 151444 011 INF - [                                ] o.hibernate.jpa.internal.util.LogHelper    31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20190411 151444 015 WAR - [                                ] .h.j.b.i.EntityManagerFactoryBuilderImpl  604: HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+20190411 151444 027 INF - [                                ] org.hibernate.dialect.Dialect             157: HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+20190411 151444 080 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  415: Initialized JPA EntityManagerFactory for persistence unit 'default'
+20190411 151453 163 WAR - [                                ] ConfigServletWebServerApplicationContext  556: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through method 'setCustomerQualifiedApi' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerQualifiedApi': Unsatisfied dependency expressed through method 'setCustomerQualifiedService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerQualifiedServiceImpl': Unsatisfied dependency expressed through method 'setCustomerQualifiedDao' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerQualifiedDao': Cannot create inner bean '(inner bean)#25e353dc' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#25e353dc': Cannot resolve reference to bean 'oneEntityManagerFactoryBean' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'oneEntityManagerFactoryBean' available
+20190411 151453 166 INF - [                                ] j.LocalContainerEntityManagerFactoryBean  597: Closing JPA EntityManagerFactory for persistence unit 'default'
+20190411 151453 189 INF - [                                ] com.alibaba.druid.pool.DruidDataSource   1823: {dataSource-1} closed
+20190411 151453 195 INF - [                                ] o.apache.catalina.core.StandardService    180: Stopping service [Tomcat]
+20190411 151453 252 INF - [                                ] ConditionEvaluationReportLoggingListener  142: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20190411 151453 452 ERR - [                                ] o.s.b.d.LoggingFailureAnalysisReporter     42: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setCustomerQualifiedDao in com.sh.ctrl.imp.CustomerQualifiedServiceImpl required a bean named 'oneEntityManagerFactoryBean' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'oneEntityManagerFactoryBean' in your configuration.
+

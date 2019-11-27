@@ -1,0 +1,90 @@
+20190411 150423 004 ERR - [                                ] o.s.b.d.LoggingFailureAnalysisReporter     42: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setCustomerQualifiedDao in com.sh.ctrl.imp.CustomerQualifiedServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+20190411 150447 491 ERR - [                                ] o.s.b.d.LoggingFailureAnalysisReporter     42: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setCustomerQualifiedDao in com.sh.ctrl.imp.CustomerQualifiedServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+20190411 150555 795 ERR - [                                ] o.s.b.d.LoggingFailureAnalysisReporter     42: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setCustomerQualifiedDao in com.sh.ctrl.imp.CustomerQualifiedServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+20190411 150742 305 ERR - [                                ] o.s.b.d.LoggingFailureAnalysisReporter     42: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setCustomerQualifiedDao in com.sh.ctrl.imp.CustomerQualifiedServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+20190411 150925 616 ERR - [                                ] o.s.b.d.LoggingFailureAnalysisReporter     42: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setCustomerQualifiedDao in com.sh.ctrl.imp.CustomerQualifiedServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+20190411 151453 452 ERR - [                                ] o.s.b.d.LoggingFailureAnalysisReporter     42: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setCustomerQualifiedDao in com.sh.ctrl.imp.CustomerQualifiedServiceImpl required a bean named 'oneEntityManagerFactoryBean' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'oneEntityManagerFactoryBean' in your configuration.
+

@@ -1,0 +1,23 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /sh
+logging:
+  config: classpath:logback.xml
+com:
+  sh:
+    datasource:
+      url: jdbc:mysql://47.94.255.160:3306/hapiactivite?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+      type: com.alibaba.druid.pool.DruidDataSource
+      dbType: mysql
+      driverClassName: com.mysql.jdbc.Driver
+      username: root
+      password: GD/hAC0IZWQuPszM9TLJaQ==
+      initialSize: 8
+      minIdle: 8
+      maxActive: 16
+      entityPackageToScan: com.sh.*.entity
+      hibernateDialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      hibernateHbm2ddlAuto: none
+      showSql: true
+

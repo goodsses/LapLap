@@ -1,0 +1,11 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.sh.config.prop.DsProp",
+      "name": "com.sh.datasource",
+      "type": "com.sh.config.prop.DsProp"
+    }
+  ],
+  "properties": []
+}
