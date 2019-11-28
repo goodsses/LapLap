@@ -7,8 +7,12 @@ import com.sh.ctrl.service.DealersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Service
+@Transactional(rollbackFor = Exception.class)
 public class DealersServiceImpl extends CommonServiceImpl<Dealers, String> implements DealersService {
 
     private DealersDao dealersDao;
@@ -21,5 +25,15 @@ public class DealersServiceImpl extends CommonServiceImpl<Dealers, String> imple
     @Override
     public JpaRepository<Dealers, String> getJpaRepository() {
         return this.dealersDao;
+    }
+
+    @Override
+    public List<Dealers> findAllByPage(Integer page, Integer size) {
+        return this.dealersDao.findAllByPage(page, size);
+    }
+
+    @Override
+    public void saveDealers(Dealers dealers) {
+        this.dealersDao.save(dealers);
     }
 }

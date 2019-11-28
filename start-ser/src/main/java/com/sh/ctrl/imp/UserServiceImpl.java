@@ -7,8 +7,12 @@ import com.sh.ctrl.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Service
+@Transactional(rollbackFor = Exception.class)
 public class UserServiceImpl extends CommonServiceImpl<User, String> implements UserService {
 
     private UserDao userDao;
@@ -21,5 +25,15 @@ public class UserServiceImpl extends CommonServiceImpl<User, String> implements 
     @Override
     public JpaRepository<User, String> getJpaRepository() {
         return this.userDao;
+    }
+
+    @Override
+    public List<User> findAllByPage(Integer page, Integer size) {
+        return this.userDao.findAllByPage(page, size);
+    }
+
+    @Override
+    public void saveUser(User user) {
+        this.userDao.save(user);
     }
 }

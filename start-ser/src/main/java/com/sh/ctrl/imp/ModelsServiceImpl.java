@@ -7,8 +7,12 @@ import com.sh.ctrl.service.ModelsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Service
+@Transactional(rollbackFor = Exception.class)
 public class ModelsServiceImpl extends CommonServiceImpl<Models, String> implements ModelsService {
 
     private ModelsDao modelsDao;
@@ -21,5 +25,15 @@ public class ModelsServiceImpl extends CommonServiceImpl<Models, String> impleme
     @Override
     public JpaRepository<Models, String> getJpaRepository() {
         return this.modelsDao;
+    }
+
+    @Override
+    public List<Models> findAllByPage(Integer page, Integer size) {
+        return this.modelsDao.findAllByPage(page, size);
+    }
+
+    @Override
+    public void saveModels(Models models) {
+        this.modelsDao.save(models);
     }
 }

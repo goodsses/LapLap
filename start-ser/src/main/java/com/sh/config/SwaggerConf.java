@@ -24,32 +24,10 @@ public class SwaggerConf {
         return new Docket(DocumentationType.SWAGGER_2)
             .apiInfo(apiInfo())
             .select()
-            .apis(RequestHandlerSelectors.basePackage("com.sh.controller.beijing"))
+            .apis(RequestHandlerSelectors.basePackage("com.sh.controller"))
             .paths(PathSelectors.any())
             .build()
-            .groupName("beijing");
-    }
-
-    @Bean
-    public Docket shanghaiRestApi(){
-        return new Docket(DocumentationType.SWAGGER_2)
-            .apiInfo(apiInfo())
-            .select()
-            .apis(RequestHandlerSelectors.basePackage("com.sh.controller.shanghai"))
-            .paths(PathSelectors.any())
-            .build()
-            .groupName("shanghai");
-    }
-
-    @Bean
-    public Docket debRestApi() {
-        return new Docket(DocumentationType.SWAGGER_2)
-            .apiInfo(apiInfo())
-            .select()
-            .apis(RequestHandlerSelectors.basePackage("com.sh.controller.deb"))
-            .paths(PathSelectors.any())
-            .build()
-            .groupName("deb（内部调试）");
+            .groupName("接口放置");
     }
 
     private ApiInfo apiInfo() {
