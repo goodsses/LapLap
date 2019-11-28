@@ -1,5 +1,0 @@
-20191128 000805 997 DEB - [                                ] druid.sql.Connection                      129: {conn-10008} setAutoCommit false
-20191128 000806 118 DEB - [                                ] druid.sql.Statement                       134: {conn-10008, pstmt-20000} Parameters : []
-20191128 000806 118 DEB - [                                ] druid.sql.Statement                       134: {conn-10008, pstmt-20000} Types : []
-20191128 000806 150 DEB - [                                ] druid.sql.Statement                       134: {conn-10008, pstmt-20000, rs-50000} query executed. 34.585723 millis. select sysuser0_.id as id1_3_, sysuser0_.password as password2_3_, sysuser0_.username as username3_3_ from sys_user sysuser0_
-20191128 000806 189 DEB - [                                ] druid.sql.Connection                      129: {conn-10008} setAutoCommit true
