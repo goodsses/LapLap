@@ -41,7 +41,7 @@ public class QuestionBankApi extends CommonApi<QuestionBank, String> {
         long count = this.questionBankService.count();
         resultOb.setItems(list);
         resultOb.setTotal(count);
-        Tools.toSuccessResultOb(resultOb);
+        Tools.setSuccessMessage(resultOb, "查询成功");
         return resultOb;
     }
 

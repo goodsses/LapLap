@@ -41,7 +41,7 @@ public class ModelsApi extends CommonApi<Models, String> {
         long count = this.modelsService.count();
         resultOb.setItems(list);
         resultOb.setTotal(count);
-        Tools.toSuccessResultOb(resultOb);
+        Tools.setSuccessMessage(resultOb, "查询成功");
         return resultOb;
     }
 

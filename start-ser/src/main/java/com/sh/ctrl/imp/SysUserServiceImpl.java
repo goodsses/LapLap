@@ -22,4 +22,9 @@ public class SysUserServiceImpl extends CommonServiceImpl<SysUser, String> imple
     public JpaRepository<SysUser, String> getJpaRepository() {
         return this.sysUserDao;
     }
+
+    @Override
+    public SysUser findByUserNameAndPassword(String userName, String password) {
+        return this.sysUserDao.findByUserNameAndPassword(userName, password);
+    }
 }

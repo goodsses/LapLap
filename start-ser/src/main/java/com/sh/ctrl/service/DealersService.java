@@ -8,11 +8,13 @@ public interface DealersService extends CommonService<Dealers, String> {
 
     /**
      * 查询经销商分页
+     * @param city 城市名称
+     * @param jxsName 经销商名称
      * @param page 页码
      * @param size 数量
      * @return 略
      */
-    List<Dealers> findAllByPage(Integer page, Integer size);
+    List<Dealers> findAllByPage(String city, String jxsName, Integer page, Integer size);
 
     /**
      * 添加或修改经销商

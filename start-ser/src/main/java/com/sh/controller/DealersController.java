@@ -30,12 +30,14 @@ public class DealersController {
     @PostMapping("findAll")
     @ApiImplicitParams(
             {
+                    @ApiImplicitParam(value = "城市名称", dataType = "String", name = "city"),
+                    @ApiImplicitParam(value = "经销商名称", dataType = "String", name = "jxsName"),
                     @ApiImplicitParam(value = "页码", dataType = "String", name = "page"),
                     @ApiImplicitParam(value = "数量", dataType = "String", name = "size")
             }
     )
-    public ResultObListWrapper findAll(Integer page, Integer size) {
-        return this.dealersApi.findAllByPage(page, size);
+    public ResultObListWrapper findAll(String city, String jxsName, Integer page, Integer size) {
+        return this.dealersApi.findAllByPage(city, jxsName, page, size);
     }
 
     @ApiOperation(value = "saveDealers.添加或修改经销商")

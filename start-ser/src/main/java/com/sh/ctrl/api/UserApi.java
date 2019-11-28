@@ -41,7 +41,7 @@ public class UserApi extends CommonApi<User, String> {
         long count = this.userService.count();
         resultOb.setItems(list);
         resultOb.setTotal(count);
-        Tools.toSuccessResultOb(resultOb);
+        Tools.setSuccessMessage(resultOb, "查询成功");
         return resultOb;
     }
 

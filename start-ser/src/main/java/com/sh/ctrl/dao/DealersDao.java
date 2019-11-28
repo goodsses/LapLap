@@ -11,10 +11,12 @@ public interface DealersDao extends JpaRepository<Dealers, String> {
 
     /**
      * 分页查询经销商
+     * @param city 城市名称
+     * @param jxsName 经销商名称
      * @param page 页码
      * @param size 数量
      * @return 略
      */
-    @Query(nativeQuery = true, value = "select * from dealers limit ?1, ?2")
-    List<Dealers> findAllByPage(Integer page, Integer size);
+    @Query(nativeQuery = true, value = "select d.* from dealers d where d.CITY like ?1 and d.jxsname like ?2 order by d.CREATETIME desc limit ?3, ?4")
+    List<Dealers> findAllByPage(String city, String jxsName, Integer page, Integer size);
 }

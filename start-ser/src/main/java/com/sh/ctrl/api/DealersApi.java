@@ -11,6 +11,7 @@ import com.sh.ctrl.service.DealersService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
@@ -31,17 +32,19 @@ public class DealersApi extends CommonApi<Dealers, String> {
 
     /**
      * 分页查询经销商
+     * @param city 城市名称
+     * @param jxsName 经销商名称
      * @param page 页码
      * @param size 数量
      * @return 略
      */
-    public ResultObListWrapper<Dealers> findAllByPage(Integer page, Integer size) {
+    public ResultObListWrapper<Dealers> findAllByPage(String city, String jxsName, Integer page, Integer size) {
         ResultObListWrapper<Dealers> resultOb = new ResultObListWrapper<>();
-        List<Dealers> list = this.dealersService.findAllByPage(page - 1, size);
+        List<Dealers> list = this.dealersService.findAllByPage("%" + city + "%", "%" + jxsName + "%", page - 1, size);
         long count = this.dealersService.count();
         resultOb.setItems(list);
         resultOb.setTotal(count);
-        Tools.toSuccessResultOb(resultOb);
+        Tools.setSuccessMessage(resultOb, "查询成功");
         return resultOb;
     }
 

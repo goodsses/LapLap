@@ -28,8 +28,8 @@ public class DealersServiceImpl extends CommonServiceImpl<Dealers, String> imple
     }
 
     @Override
-    public List<Dealers> findAllByPage(Integer page, Integer size) {
-        return this.dealersDao.findAllByPage(page, size);
+    public List<Dealers> findAllByPage(String city, String jxsName, Integer page, Integer size) {
+        return this.dealersDao.findAllByPage(city, jxsName, page, size);
     }
 
     @Override
