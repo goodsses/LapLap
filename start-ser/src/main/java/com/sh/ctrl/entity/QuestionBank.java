@@ -35,7 +35,7 @@ public class QuestionBank implements Serializable {
 
     private String createtime;
 
-    private String updateTime;
+    private String updatetime;
 
     private String prompt;
 }
