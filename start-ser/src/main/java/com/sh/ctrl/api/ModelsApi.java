@@ -11,6 +11,9 @@ import com.sh.ctrl.service.ModelsService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -31,13 +34,14 @@ public class ModelsApi extends CommonApi<Models, String> {
 
     /**
      * 分页查询车型
+     * @param type 类型
      * @param page 页码
      * @param size 数量
      * @return 略
      */
-    public ResultObListWrapper<Models> findAllByPage(Integer page, Integer size) {
+    public ResultObListWrapper<Models> findAllByPage(String type, Integer page, Integer size) {
         ResultObListWrapper<Models> resultOb = new ResultObListWrapper<>();
-        List<Models> list = this.modelsService.findAllByPage(page - 1, size);
+        List<Models> list = this.modelsService.findAllByPage("%" + type + "%", page - 1, size);
         long count = this.modelsService.count();
         resultOb.setItems(list);
         resultOb.setTotal(count);
@@ -53,6 +57,11 @@ public class ModelsApi extends CommonApi<Models, String> {
     public ResultObWrapper<Models> saveModels(Models models) {
         ResultObWrapper<Models> resultObWrapper = new ResultObWrapper<>();
         try {
+            String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+            models.setUpdatetime(date);
+            if (StringUtils.isEmpty(models.getCreatetime())) {
+                models.setCreatetime(date);
+            }
             this.modelsService.saveModels(models);
             resultObWrapper.setData(models);
             if (StringUtils.isEmpty(models.getId())) {
@@ -73,13 +82,16 @@ public class ModelsApi extends CommonApi<Models, String> {
 
     /**
      * 删除车型
-     * @param id ID
+     * @param ids ID
      * @return 略
      */
-    public ResultObWrapper<Models> deleteModels(String id) {
+    public ResultObWrapper<Models> deleteModels(String ids) {
         ResultObWrapper<Models> resultObWrapper = new ResultObWrapper<>();
         try {
-            this.modelsService.deleteById(id);
+            String[] idList = ids.split(",");
+            for (String id : idList) {
+                this.modelsService.deleteById(id);
+            }
             Tools.setSuccessMessage(resultObWrapper, "删除成功");
         } catch (Exception e) {
             log.error("删除车型失败，错误原因： [{}]", e.getMessage());

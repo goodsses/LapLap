@@ -12,6 +12,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -56,6 +58,11 @@ public class DealersApi extends CommonApi<Dealers, String> {
     public ResultObWrapper<Dealers> saveDealers(Dealers dealers) {
         ResultObWrapper<Dealers> resultObWrapper = new ResultObWrapper<>();
         try {
+            String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+            dealers.setUpdatetime(date);
+            if (StringUtils.isEmpty(dealers.getCreatetime())) {
+                dealers.setCreatetime(date);
+            }
             this.dealersService.saveDealers(dealers);
             resultObWrapper.setData(dealers);
             if (StringUtils.isEmpty(dealers.getId())) {
@@ -76,13 +83,16 @@ public class DealersApi extends CommonApi<Dealers, String> {
 
     /**
      * 删除经销商
-     * @param id ID
+     * @param ids ID
      * @return 略
      */
-    public ResultObWrapper<Dealers> deleteDealers(String id) {
+    public ResultObWrapper<Dealers> deleteDealers(String ids) {
         ResultObWrapper<Dealers> resultObWrapper = new ResultObWrapper<>();
         try {
-            this.dealersService.deleteById(id);
+            String[] idList = ids.split(",");
+            for (String id : idList) {
+                this.dealersService.deleteById(id);
+            }
             Tools.setSuccessMessage(resultObWrapper, "删除成功");
         } catch (Exception e) {
             log.error("删除经销商失败，错误原因： [{}]", e.getMessage());

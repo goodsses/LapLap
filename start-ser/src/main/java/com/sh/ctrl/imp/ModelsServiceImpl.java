@@ -28,8 +28,8 @@ public class ModelsServiceImpl extends CommonServiceImpl<Models, String> impleme
     }
 
     @Override
-    public List<Models> findAllByPage(Integer page, Integer size) {
-        return this.modelsDao.findAllByPage(page, size);
+    public List<Models> findAllByPage(String type, Integer page, Integer size) {
+        return this.modelsDao.findAllByPage(type, page, size);
     }
 
     @Override

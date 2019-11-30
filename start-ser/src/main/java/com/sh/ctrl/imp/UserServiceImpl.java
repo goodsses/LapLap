@@ -28,8 +28,8 @@ public class UserServiceImpl extends CommonServiceImpl<User, String> implements 
     }
 
     @Override
-    public List<User> findAllByPage(Integer page, Integer size) {
-        return this.userDao.findAllByPage(page, size);
+    public List<User> findAllByPage(String name, String mobile, Integer page, Integer size) {
+        return this.userDao.findAllByPage(name, mobile, page, size);
     }
 
     @Override

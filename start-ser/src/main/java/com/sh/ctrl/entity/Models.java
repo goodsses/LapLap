@@ -14,8 +14,7 @@ public class Models implements Serializable {
     private static final long serialVersionUID = 1405070336447985921L;
 
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private String id;
 
     private String type;

@@ -27,12 +27,17 @@ public class QuestionBankServiceImpl extends CommonServiceImpl<QuestionBank, Str
     }
 
     @Override
-    public List<QuestionBank> findAllByPage(Integer page, Integer size) {
-        return this.questionBankDao.findAllByPage(page, size);
+    public List<QuestionBank> findAllByPage(String question, Integer page, Integer size) {
+        return this.questionBankDao.findAllByPage(question, page, size);
     }
 
     @Override
     public void saveQuestion(QuestionBank questionBank) {
         this.questionBankDao.save(questionBank);
+    }
+
+    @Override
+    public QuestionBank findByQuestion(String question) {
+        return this.questionBankDao.findByQuestion(question);
     }
 }

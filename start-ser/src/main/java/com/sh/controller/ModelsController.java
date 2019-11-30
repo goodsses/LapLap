@@ -9,10 +9,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Api(tags = "车型控制器")
@@ -30,12 +27,13 @@ public class ModelsController {
     @PostMapping("findAll")
     @ApiImplicitParams(
             {
+                    @ApiImplicitParam(value = "类型", dataType = "String", name = "type"),
                     @ApiImplicitParam(value = "页码", dataType = "String", name = "page"),
                     @ApiImplicitParam(value = "数量", dataType = "String", name = "size")
             }
     )
-    public ResultObListWrapper findAll(Integer page, Integer size) {
-        return this.modelsApi.findAllByPage(page, size);
+    public ResultObListWrapper findAll(String type, Integer page, Integer size) {
+        return this.modelsApi.findAllByPage(type, page, size);
     }
 
     @ApiOperation(value = "saveModels.添加或修改试题")
@@ -45,7 +43,7 @@ public class ModelsController {
                     @ApiImplicitParam(value = "试题", dataType = "Object", name = "questionBank")
             }
     )
-    public ResultObWrapper saveModels(@RequestBody Models models) {
+    public ResultObWrapper saveModels(@ModelAttribute Models models) {
         return this.modelsApi.saveModels(models);
     }
 
@@ -53,10 +51,10 @@ public class ModelsController {
     @PostMapping("deleteModels")
     @ApiImplicitParams(
             {
-                    @ApiImplicitParam(value = "ID", dataType = "String", name = "id")
+                    @ApiImplicitParam(value = "ID", dataType = "String", name = "ids")
             }
     )
-    public ResultObWrapper deleteModels(String id) {
-        return this.modelsApi.deleteModels(id);
+    public ResultObWrapper deleteModels(String ids) {
+        return this.modelsApi.deleteModels(ids);
     }
 }

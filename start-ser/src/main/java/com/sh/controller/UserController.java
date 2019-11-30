@@ -9,10 +9,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Api(tags = "用户控制器")
@@ -30,12 +27,14 @@ public class UserController {
     @PostMapping("findAll")
     @ApiImplicitParams(
             {
+                    @ApiImplicitParam(value = "名称", dataType = "String", name = "name"),
+                    @ApiImplicitParam(value = "手机号", dataType = "String", name = "mobile"),
                     @ApiImplicitParam(value = "页码", dataType = "String", name = "page"),
                     @ApiImplicitParam(value = "数量", dataType = "String", name = "size")
             }
     )
-    public ResultObListWrapper findAll(Integer page, Integer size) {
-        return this.userApi.findAllByPage(page, size);
+    public ResultObListWrapper findAll(String name, String mobile, Integer page, Integer size) {
+        return this.userApi.findAllByPage(name, mobile, page, size);
     }
 
     @ApiOperation(value = "saveUser.添加或修改用户")
@@ -45,7 +44,7 @@ public class UserController {
                     @ApiImplicitParam(value = "用户", dataType = "Object", name = "user")
             }
     )
-    public ResultObWrapper saveUser(@RequestBody User user) {
+    public ResultObWrapper saveUser(@ModelAttribute User user) {
         return this.userApi.saveUser(user);
     }
 
@@ -53,10 +52,10 @@ public class UserController {
     @PostMapping("deleteUser")
     @ApiImplicitParams(
             {
-                    @ApiImplicitParam(value = "ID", dataType = "String", name = "id")
+                    @ApiImplicitParam(value = "ID", dataType = "String", name = "ids")
             }
     )
-    public ResultObWrapper deleteUser(String id) {
-        return this.userApi.deleteUser(id);
+    public ResultObWrapper deleteUser(String ids) {
+        return this.userApi.deleteUser(ids);
     }
 }

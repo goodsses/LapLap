@@ -12,10 +12,13 @@ public interface QuestionBankDao extends JpaRepository<QuestionBank, String> {
 
     /**
      * 分页查询试题
+     * @param question 题目
      * @param page 页码
      * @param size 数量
      * @return 略
      */
-    @Query(nativeQuery = true, value = "select * from questionbank limit ?1, ?2")
-    List<QuestionBank> findAllByPage(Integer page, Integer size);
+    @Query(nativeQuery = true, value = "select q.* from questionbank q where q.QUESTION like ?1 limit ?2, ?3")
+    List<QuestionBank> findAllByPage(String question, Integer page, Integer size);
+
+    QuestionBank findByQuestion(String question);
 }

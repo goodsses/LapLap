@@ -1,12 +1,7 @@
 package com.sh.ctrl.entity;
 
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Data
@@ -17,8 +12,7 @@ public class Dealers implements Serializable {
     private static final long serialVersionUID = 2967979049609729278L;
 
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private String id;
 
     private String city;

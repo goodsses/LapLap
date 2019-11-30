@@ -3,10 +3,7 @@ package com.sh.ctrl.entity;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Data
@@ -17,8 +14,7 @@ public class QuestionBank implements Serializable {
     private static final long serialVersionUID = -4871232182604241571L;
 
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private String id;
 
     private String question;

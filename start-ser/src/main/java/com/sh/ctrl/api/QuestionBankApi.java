@@ -11,6 +11,8 @@ import com.sh.ctrl.service.QuestionBankService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -31,13 +33,14 @@ public class QuestionBankApi extends CommonApi<QuestionBank, String> {
 
     /**
      * 分页查询试题
+     * @param question 题目
      * @param page 页码
      * @param size 数量
      * @return 略
      */
-    public ResultObListWrapper<QuestionBank> findAllByPage(Integer page, Integer size) {
+    public ResultObListWrapper<QuestionBank> findAllByPage(String question, Integer page, Integer size) {
         ResultObListWrapper<QuestionBank> resultOb = new ResultObListWrapper<>();
-        List<QuestionBank> list = this.questionBankService.findAllByPage(page - 1, size);
+        List<QuestionBank> list = this.questionBankService.findAllByPage("%" + question + "%", page - 1, size);
         long count = this.questionBankService.count();
         resultOb.setItems(list);
         resultOb.setTotal(count);
@@ -50,9 +53,23 @@ public class QuestionBankApi extends CommonApi<QuestionBank, String> {
      * @param questionBank 试题对象
      * @return 略
      */
-    public ResultObWrapper<QuestionBank> saveQuestion(QuestionBank questionBank) {
+    public synchronized ResultObWrapper<QuestionBank> saveQuestion(QuestionBank questionBank, String type) {
         ResultObWrapper<QuestionBank> resultObWrapper = new ResultObWrapper<>();
         try {
+            String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+            questionBank.setUpdatetime(date);
+            if (StringUtils.isEmpty(questionBank.getCreatetime())) {
+                questionBank.setCreatetime(date);
+            }
+            QuestionBank questionBankNew = questionBankService.findByQuestion(questionBank.getQuestion());
+            if(null != questionBankNew) {
+                questionBank.setId(questionBankNew.getId());
+                if ("1".equals(type)) {
+                    questionBank.setOptionbimg(questionBankNew.getOptionbimg());
+                } else {
+                    questionBank.setOptionaimg(questionBankNew.getOptionaimg());
+                }
+            }
             this.questionBankService.saveQuestion(questionBank);
             resultObWrapper.setData(questionBank);
             if (StringUtils.isEmpty(questionBank.getId())) {
@@ -73,13 +90,16 @@ public class QuestionBankApi extends CommonApi<QuestionBank, String> {
 
     /**
      * 删除试题
-     * @param id ID
+     * @param ids ID
      * @return 略
      */
-    public ResultObWrapper<QuestionBank> deleteQuestion(String id) {
+    public ResultObWrapper<QuestionBank> deleteQuestion(String ids) {
         ResultObWrapper<QuestionBank> resultObWrapper = new ResultObWrapper<>();
         try {
-            this.questionBankService.deleteById(id);
+            String[] idList = ids.split(",");
+            for (String id : idList) {
+                this.questionBankService.deleteById(id);
+            }
             Tools.setSuccessMessage(resultObWrapper, "删除成功");
         } catch (Exception e) {
             log.error("删除试题失败，错误原因： [{}]", e.getMessage());

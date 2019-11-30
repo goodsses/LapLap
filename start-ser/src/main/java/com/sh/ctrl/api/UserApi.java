@@ -6,18 +6,39 @@ import com.sh.common.service.CommonService;
 import com.sh.common.utils.Tools;
 import com.sh.common.wrapper.ResultObListWrapper;
 import com.sh.common.wrapper.ResultObWrapper;
+import com.sh.ctrl.entity.Dealers;
+import com.sh.ctrl.entity.Models;
+import com.sh.ctrl.entity.UserWrapper;
 import com.sh.ctrl.entity.User;
+import com.sh.ctrl.service.DealersService;
+import com.sh.ctrl.service.ModelsService;
 import com.sh.ctrl.service.UserService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @Slf4j
 public class UserApi extends CommonApi<User, String> {
 
     private UserService userService;
+
+    private DealersService dealersService;
+
+    private ModelsService modelsService;
+
+    @Autowired
+    public void setModelsService(ModelsService modelsService) {
+        this.modelsService = modelsService;
+    }
+
+    @Autowired
+    public void setDealersService(DealersService dealersService) {
+        this.dealersService = dealersService;
+    }
 
     @Autowired
     public void setUserService(UserService userService) {
@@ -31,15 +52,40 @@ public class UserApi extends CommonApi<User, String> {
 
     /**
      * 分页查询用户
+     * @param name 名称
+     * @param mobile 手机号
      * @param page 页码
      * @param size 数量
      * @return 略
      */
-    public ResultObListWrapper<User> findAllByPage(Integer page, Integer size) {
-        ResultObListWrapper<User> resultOb = new ResultObListWrapper<>();
-        List<User> list = this.userService.findAllByPage(page - 1, size);
+    public ResultObListWrapper<UserWrapper> findAllByPage(String name, String mobile, Integer page, Integer size) {
+        ResultObListWrapper<UserWrapper> resultOb = new ResultObListWrapper<>();
+        List<User> list = this.userService.findAllByPage("%" + name + "%", "%" + mobile + "%", page - 1, size);
+        List<UserWrapper> userWrappers = list.stream().map(item -> {
+            UserWrapper userWrapper = new UserWrapper();
+            BeanUtils.copyProperties(item, userWrapper);
+            try {
+                Dealers dealers = dealersService.findById(item.getDealerid());
+                if (null != dealers) {
+                    userWrapper.setCity(dealers.getCity());
+                    userWrapper.setJxsjc(dealers.getJxsjc());
+                    userWrapper.setJxsname(dealers.getJxsname());
+                }
+            } catch (Exception e) {
+                log.error("分页查询用户未查到关联表经销商信息，错误原因： [{}]", e.getMessage());
+            }
+            try {
+                Models models = modelsService.findById(item.getModelid());
+                if (null != models) {
+                    userWrapper.setType(models.getType());
+                }
+            } catch (Exception e) {
+                log.error("分页查询用户未查到关联表车型信息，错误原因： [{}]", e.getMessage());
+            }
+            return userWrapper;
+        }).collect(Collectors.toList());
         long count = this.userService.count();
-        resultOb.setItems(list);
+        resultOb.setItems(userWrappers);
         resultOb.setTotal(count);
         Tools.setSuccessMessage(resultOb, "查询成功");
         return resultOb;
@@ -73,13 +119,16 @@ public class UserApi extends CommonApi<User, String> {
 
     /**
      * 删除用户
-     * @param id ID
+     * @param ids ID
      * @return 略
      */
-    public ResultObWrapper<User> deleteUser(String id) {
+    public ResultObWrapper<User> deleteUser(String ids) {
         ResultObWrapper<User> resultObWrapper = new ResultObWrapper<>();
         try {
-            this.userService.deleteById(id);
+            String[] idList = ids.split(",");
+            for (String id : idList) {
+                this.userService.deleteById(id);
+            }
             Tools.setSuccessMessage(resultObWrapper, "删除成功");
         } catch (Exception e) {
             log.error("删除用户失败，错误原因： [{}]", e.getMessage());

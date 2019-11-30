@@ -9,10 +9,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Api(tags = "经销商控制器")
@@ -47,7 +44,7 @@ public class DealersController {
                     @ApiImplicitParam(value = "经销商", dataType = "Object", name = "dealers")
             }
     )
-    public ResultObWrapper saveDealers(@RequestBody Dealers dealers) {
+    public ResultObWrapper saveDealers(@ModelAttribute Dealers dealers) {
         return this.dealersApi.saveDealers(dealers);
     }
 
@@ -55,10 +52,10 @@ public class DealersController {
     @PostMapping("deleteDealers")
     @ApiImplicitParams(
             {
-                    @ApiImplicitParam(value = "ID", dataType = "String", name = "id")
+                    @ApiImplicitParam(value = "ID", dataType = "String", name = "ids")
             }
     )
-    public ResultObWrapper deleteDealers(String id) {
-        return this.dealersApi.deleteDealers(id);
+    public ResultObWrapper deleteDealers(String ids) {
+        return this.dealersApi.deleteDealers(ids);
     }
 }

@@ -1,5 +1,7 @@
 package com.sh.controller;
 
+import com.alibaba.fastjson.JSONObject;
+import com.sh.common.utils.Tools;
 import com.sh.common.wrapper.ResultObListWrapper;
 import com.sh.common.wrapper.ResultObWrapper;
 import com.sh.ctrl.api.QuestionBankApi;
@@ -9,10 +11,16 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
 
 @RestController
 @Api(tags = "问卷控制器")
@@ -20,6 +28,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class QuestionBankController {
 
     private QuestionBankApi questionBankApi;
+
+    @Value("${upload.address}")
+    private String uploadAddress;
 
     @Autowired
     public void setQuestionBankApi(QuestionBankApi questionBankApi) {
@@ -30,23 +41,59 @@ public class QuestionBankController {
     @PostMapping("findAll")
     @ApiImplicitParams(
             {
+                    @ApiImplicitParam(value = "题目", dataType = "String", name = "question"),
                     @ApiImplicitParam(value = "页码", dataType = "String", name = "page"),
                     @ApiImplicitParam(value = "数量", dataType = "String", name = "size")
             }
     )
-    public ResultObListWrapper findAll(Integer page, Integer size) {
-        return this.questionBankApi.findAllByPage(page, size);
+    public ResultObListWrapper findAll(String question, Integer page, Integer size) {
+        return this.questionBankApi.findAllByPage(question, page, size);
     }
 
     @ApiOperation(value = "saveQuestion.添加或修改试题")
     @PostMapping("saveQuestion")
     @ApiImplicitParams(
             {
-                    @ApiImplicitParam(value = "试题", dataType = "Object", name = "questionBank")
+                    @ApiImplicitParam(value = "实体", dataType = "Object", name = "bean")
             }
     )
-    public ResultObWrapper saveQuestion(@RequestBody QuestionBank questionBank) {
-        return this.questionBankApi.saveQuestion(questionBank);
+    public ResultObWrapper saveQuestion(@RequestParam(value = "bean") String bean, @RequestParam(value = "type") String type, @RequestParam(value = "file") MultipartFile file, HttpServletRequest request) {
+        ResultObWrapper resultObWrapper = new ResultObWrapper();
+        Tools.setSuccessMessage(resultObWrapper, "上传成功");
+        String fileName = file.getOriginalFilename();
+        if (null != fileName) {
+            try {
+                // 后缀: "jpg || png"
+                String prefix = fileName.substring(fileName.lastIndexOf(".") + 1);
+                List<String> prefixList = Arrays.asList("jpg", "png");
+                if (!prefixList.contains(prefix)) {
+                    Tools.setErrorMessage(resultObWrapper, "文件格式不正确");
+                    return resultObWrapper;
+                }
+                String path = uploadAddress;
+                String date = String.valueOf(new Date().getTime());
+                if (!new File(path).exists()) {
+                    new File(path).mkdir();
+                }
+                File files = new File(path + File.separator + date + "_" + fileName);
+                file.transferTo(files);
+                QuestionBank questionBank = JSONObject.parseObject(bean, QuestionBank.class);
+                if ("1".equals(type)) {
+                    questionBank.setOptionaimg(path + File.separator + date + "_" + fileName);
+                } else {
+                    questionBank.setOptionbimg(path + File.separator + date + "_" + fileName);
+                }
+                //删除图片功能 todo
+
+
+                return this.questionBankApi.saveQuestion(questionBank, type);
+            } catch (Exception e) {
+                Tools.setErrorMessage(resultObWrapper, "上传失败");
+            }
+        } else {
+            Tools.setErrorMessage(resultObWrapper, "上传失败");
+        }
+        return resultObWrapper;
     }
 
     @ApiOperation(value = "deleteQuestion.删除试题")
@@ -56,7 +103,7 @@ public class QuestionBankController {
                     @ApiImplicitParam(value = "ID", dataType = "String", name = "id")
             }
     )
-    public ResultObWrapper deleteQuestion(String id) {
-        return this.questionBankApi.deleteQuestion(id);
+    public ResultObWrapper deleteQuestion(String ids) {
+        return this.questionBankApi.deleteQuestion(ids);
     }
 }

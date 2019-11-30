@@ -8,11 +8,13 @@ public interface UserService extends CommonService<User, String> {
 
     /**
      * 查询用户分页
+     * @param name 名称
+     * @param mobile 手机号
      * @param page 页码
      * @param size 数量
      * @return 略
      */
-    List<User> findAllByPage(Integer page, Integer size);
+    List<User> findAllByPage(String name, String mobile, Integer page, Integer size);
 
     /**
      * 添加或修改用户
