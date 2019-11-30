@@ -36,4 +36,9 @@ public class ModelsServiceImpl extends CommonServiceImpl<Models, String> impleme
     public void saveModels(Models models) {
         this.modelsDao.save(models);
     }
+
+    @Override
+    public List<Models> findAllModel() {
+        return this.modelsDao.findAllModel();
+    }
 }

@@ -36,4 +36,14 @@ public class DealersServiceImpl extends CommonServiceImpl<Dealers, String> imple
     public void saveDealers(Dealers dealers) {
         this.dealersDao.save(dealers);
     }
+
+    @Override
+    public List<String> getAllCity() {
+        return this.dealersDao.findAllCity();
+    }
+
+    @Override
+    public List<Dealers> getAllByCity(String city) {
+        return this.dealersDao.findAllByCity(city);
+    }
 }

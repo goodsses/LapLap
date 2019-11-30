@@ -20,4 +20,10 @@ public interface ModelsService extends CommonService<Models, String> {
      * @param models 车型对象
      */
     void saveModels(Models models);
+
+    /**
+     * 获取所有车型
+     * @return
+     */
+    List<Models> findAllModel();
 }

@@ -21,4 +21,17 @@ public interface DealersService extends CommonService<Dealers, String> {
      * @param dealers 经销商对象
      */
     void saveDealers(Dealers dealers);
+
+    /**
+     * 获取所有城市
+     * @return
+     */
+    List<String> getAllCity();
+
+    /**
+     * 根据城市获取经销商
+     * @param city
+     * @return
+     */
+    List<Dealers> getAllByCity(String city);
 }

@@ -4,7 +4,6 @@ server:
     context-path: /sh
 logging:
   config: classpath:logback.xml
-
 com:
   sh:
     datasource:
@@ -27,5 +26,15 @@ spring:
       max-request-size: 10MB
       max-file-size: 10MB
 
-upload:
-  address: D://MyFile
+
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML5
+    servlet:
+      content-type: text/html
+
+
