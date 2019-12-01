@@ -21,4 +21,7 @@ public interface QuestionBankDao extends JpaRepository<QuestionBank, String> {
     List<QuestionBank> findAllByPage(String question, Integer page, Integer size);
 
     QuestionBank findByQuestion(String question);
+
+    @Query(nativeQuery = true, value = "select * from questionbank ")
+    List<QuestionBank> findAllQuestion();
 }

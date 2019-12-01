@@ -1,0 +1,83 @@
+<!doctype html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>汽车</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+		<script th:src="@{/js/jquery-1.10.2.js}"></script>
+		<script>
+			var c = 0;
+			var t;
+
+			function timedCount() {
+				c = c + 1;
+				t = setTimeout("timedCount()", 1000);
+			};
+
+			function nextclick(){
+				var listsize=$(".listsize").val();
+				if(($(".hbkc").length+$(".hbk").length )==listsize){
+					clearTimeout(t);
+					window.sessionStorage.setItem("userTime",c);
+					location.href="userinfo.html";
+				}else{
+					alert("题目未答完");
+					return;
+				}
+			}
+
+			$(document).ready(function() {
+
+				timedCount();
+				$(".dat_tp1").click(function() {
+					var selectContent=$(this).attr("option");
+					//alert($(this).parent().next().html());
+					$(this).parent().next().removeClass("prompt");
+
+					var answer=$(this).parent().siblings(".answer").val();
+					if(selectContent==answer){
+						$(this).addClass("hbk").siblings().removeClass("hbkc");
+					}else{
+						$(this).addClass("hbkc").siblings().removeClass("hbk");
+					}
+
+				});
+
+
+			});
+		</script>
+	</head>
+
+	<body class="">
+
+		<div class="main_jz dt_bj">
+			<div class="dat_bj" >
+				<input type="hidden" th:value="${questionList.size()}" class="listsize"/>
+				<div class="dat_list" th:each="question,questionStatus : ${questionList}">
+					<h3 th:text="${(questionStatus.index+1)+'.'+question.getQuestion()}">1. 沃尔沃为了驾驶安全，一直追求更坚固的车身，车架钢材的选择与众不同，请问采用哪种钢材？</h3>
+					<div class="dat_tp">
+						<div class="dat_tp1" option="A">
+							<a href="javascript:void(0);" ><img th:src="${imgurl+question.getOptionaimg()}"></a>
+						</div>
+						<div class="dat_tp1" option="B">
+							<a href="javascript:void(0);" ><img th:src="${imgurl+question.getOptionbimg()}"></a>
+						</div>
+					</div>
+					<p th:text="${question.getPrompt()}" class="prompt">沃尔沃采用40%全进口军用级硼钢，屈服强度高达1600MPa。另外全车焊点数打5863个，采用100%激光全自动焊接和航空航天级SPR铆接技术，共同奠定坚实的安全基础。</p>
+					<input type="hidden" th:value="${question.getAnswer()}"  class="answer"/>
+				</div>
+
+				<div class="next">
+					<div class="next" onclick="nextclick()"><img th:src="@{/images/next.png}"></div>
+				</div>
+			</div>
+
+
+		</div>
+	</body>
+
+</html>

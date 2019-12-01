@@ -17,6 +17,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -99,6 +102,8 @@ public class UserApi extends CommonApi<User, String> {
     public ResultObWrapper<User> saveUser(User user) {
         ResultObWrapper<User> resultObWrapper = new ResultObWrapper<>();
         try {
+            String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+            user.setCreatetime(date);
             this.userService.saveUser(user);
             resultObWrapper.setData(user);
             if (StringUtils.isEmpty(user.getId())) {

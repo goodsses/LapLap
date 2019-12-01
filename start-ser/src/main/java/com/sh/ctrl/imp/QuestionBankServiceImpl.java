@@ -40,4 +40,9 @@ public class QuestionBankServiceImpl extends CommonServiceImpl<QuestionBank, Str
     public QuestionBank findByQuestion(String question) {
         return this.questionBankDao.findByQuestion(question);
     }
+
+    @Override
+    public List<QuestionBank> findAllQuestion() {
+       return  this.questionBankDao.findAllQuestion();
+    }
 }

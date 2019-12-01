@@ -1,0 +1,38 @@
+<!doctype html>
+<html  xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>汽车</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+<script th:src="@{/js/jquery-1.10.2.js}"></script>
+</head>
+<style>
+html{height: 100%;}
+</style>
+<script>
+	$(function() {
+			var time=window.sessionStorage.getItem("userTime");		
+			$(".usertime").html(time)
+        var imga="<img  src='/sh/web/img?time="+time+"'>";
+           $(".fxsm").html(imga);
+	});
+</script>
+<body class="">
+<div class="main_jz fenx">
+
+<div class="fenx_top">
+
+  <div class="fxsm">
+
+  </div>
+
+</div>
+<div class="fenx_bot"><p>长按保存图片分享给好友<br>或点击右上角按钮分享给好友或朋友圈</p></div>
+
+</div>
+</body>
+</html>

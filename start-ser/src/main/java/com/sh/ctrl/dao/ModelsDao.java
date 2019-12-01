@@ -18,4 +18,7 @@ public interface ModelsDao extends JpaRepository<Models, String> {
      */
     @Query(nativeQuery = true, value = "select m.* from models m where m.type like ?1 limit ?2, ?3")
     List<Models> findAllByPage(String type, Integer page, Integer size);
+
+    @Query(nativeQuery = true, value = "select m.* from models m ")
+    List<Models> findAllModel();
 }

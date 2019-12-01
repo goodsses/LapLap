@@ -1,0 +1,128 @@
+<!doctype html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>汽车</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+    <script th:src="@{/js/jquery-1.10.2.js}"></script>
+
+</head>
+<body class="">
+<script>
+    function selectCity(dealersString,cityCode) {
+        var html="<option value =''>经销商</option>";
+        var dealers=eval('(' +dealersString + ')');
+        for (var i=0;i<=dealers.length-1;  i++){
+            html+="<option value ='"+dealers[i].id+"'>"+dealers[i].jxsjc+"</option>";
+        }
+        $("#jxs").html(html);
+    }
+$(function(){
+    $(".tjfx").click(function(){
+       var city= $("#city").val().trim();
+       if(null==city || ""==city){
+            alert("请选择城市")
+           return;
+       }
+        var jxs=$("#jxs").val();
+        if(null==jxs || ""==jxs){
+            alert("请选择经销商")
+            return;
+        }
+        var model=$("#model").val();
+        if(null==model || ""==model){
+            alert("请选择车型")
+            return;
+        }
+        var name=$("#name").val();
+        if(null==name || ""==name){
+            alert("请输入姓名")
+            return;
+        }
+        var phone=$("#phone").val();
+        var reg=new RegExp("^[0-9]*$");
+
+        if(null==phone || ""==phone || !reg.test(phone)){
+            alert("请输入正确的手机号")
+            return;
+        }
+        $.ajax({
+            url : "/sh/user/saveUser",
+            type : 'POST',
+            dataType : 'json',
+            data:{city:city,dealerid:jxs,name:name,phone:phone,modelid:model},
+            success : function(data) {
+                location.href="share.html";
+            }
+        });
+    });
+});
+
+
+</script>
+<div class="main_jz liuz">
+
+  <div class="sum_tj">
+    <p>恭喜您已完成所有问答挑战<br>留下您的个人信息，即刻赢取</p>
+   <p> <strong>「冰雪试驾之旅 & 全新S60发布会现场名额」</strong></p>
+    <div class="msg">
+    <form>
+     <div class="msg_list">
+        <span><img th:src="@{/images/bd1.jpg}" width="38" height="38"></span>
+        <div class="slt_xz">
+        <select id="city" onChange="selectCity(this.value ,  this.text)">
+          <option value ="">城市</option>
+            <option  th:each="city : ${map}" th:value ="${map.get(city.key)}" th:text="${city.key}" >上海</option>
+            </select>
+       </div>
+     </div>
+
+     <div class="msg_list">
+        <span><img th:src="@{/images/bd2.jpg}" width="38" height="38"></span>
+        <div class="slt_xz">
+        <select id="jxs">
+            <option value ="">经销商</option>
+        </select>
+       </div>
+     </div>
+
+
+     <div class="msg_list">
+        <span><img th:src="@{/images/bd3.jpg}" width="38" height="38"></span>
+        <div class="slt_xz">
+        <select id="model">
+          <option value ="">车型</option>
+            <option  th:each="model : ${models}" th:value ="${model.getId()}" th:text="${model.getType()}" >上海</option>
+        </select>
+       </div>
+     </div>
+
+     <div class="msg_list">
+        <span><img th:src="@{/images/bd4.jpg}" width="38" height="38"></span>
+        <div class="slt_xz msg_wb"><input name="name" id="name" type="text" placeholder="姓名" maxlength="15" ></div>
+     </div>
+
+     <div class="msg_list">
+        <span><img th:src="@{/images/bd5.jpg}" width="38" height="38"></span>
+        <div class="slt_xz msg_wb">
+            <input name="phone" id="phone" type="text" placeholder="手机" oninput="if(value.length>11)value=value.slice(0,11)">
+
+        </div>
+     </div>
+
+     <div class="tjfx"><img  th:src="@{/images/tijiao.png}"></div>
+    </form>
+    </div>
+  </div>
+<div class="tp_mm">
+  <div class="tplist"><img th:src="@{/images/tp1.jpg}"></div>
+  <div class="tplist"><img th:src="@{/images/tp2.jpg}"></div>
+</div>
+
+</div>
+</body>
+</html>

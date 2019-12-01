@@ -22,4 +22,6 @@ public interface QuestionBankService extends CommonService<QuestionBank, String>
     void saveQuestion(QuestionBank questionBank);
 
     QuestionBank findByQuestion(String question);
+
+    List<QuestionBank> findAllQuestion();
 }

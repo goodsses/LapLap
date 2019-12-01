@@ -1,0 +1,51 @@
+<!doctype html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>汽车</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+<script th:src="@{/js/jquery-1.10.2.js}"></script>
+</head>
+<style>
+html{height: 100%;}
+</style>
+<body class="">
+<div class="main_jz sybj">
+  <img th:src="@{/images/logo.png}" class="logo" />
+  <div class="index_tit">
+    <h1>沃尔沃全新S60<br>为爱选择</h1>
+    <span></span>
+    <P>由爱出发，由心上市<br>12月14日，杭州不见不散</P>
+  </div>
+
+<div class="footer_strat">
+  <p>点击<strong>“START”</strong>参与互动<br>即刻赢取惊喜好礼</p>
+  <div class="button_ks" onclick="bf();"><img th:src="@{/images/ks.png}"></div>
+  <audio th:src="@{/images/yinxiao.mp3}" controls="controls" preload id="music1" hidden />
+</div>
+
+
+</div>
+<script>
+
+function bf(){
+ var audio = document.getElementById('music1'); 
+ if(audio!==null){             
+    //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+     audio.paused;
+     audio.play();//audio.play();// 这个就是播放  
+     setTimeout(tiaozhuan,500);
+     //ocation.href="dati.html";
+ } 
+}
+ 
+ function tiaozhuan(){
+ 	location.href="question.html";
+ }
+</script>
+</body>
+</html>
