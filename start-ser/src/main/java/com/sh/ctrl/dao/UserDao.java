@@ -19,4 +19,6 @@ public interface UserDao extends JpaRepository<User, String> {
      */
     @Query(nativeQuery = true, value = "select u.* from user u where u.NAME like ?1 and u.PHONE like ?2 limit ?3, ?4")
     List<User> findAllByPage(String name, String mobile, Integer page, Integer size);
+
+    User findByPhone(String phone);
 }

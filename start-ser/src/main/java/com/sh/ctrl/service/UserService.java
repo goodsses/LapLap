@@ -21,4 +21,6 @@ public interface UserService extends CommonService<User, String> {
      * @param user 用户对象
      */
     void saveUser(User user);
+
+    User findByPhone(String phone);
 }

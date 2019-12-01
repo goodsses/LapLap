@@ -36,4 +36,9 @@ public class UserServiceImpl extends CommonServiceImpl<User, String> implements 
     public void saveUser(User user) {
         this.userDao.save(user);
     }
+
+    @Override
+    public User findByPhone(String phone) {
+        return this.userDao.findByPhone(phone);
+    }
 }
