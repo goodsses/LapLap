@@ -55,10 +55,11 @@ public class UserApi extends CommonApi<User, String> {
 
     /**
      * 分页查询用户
-     * @param name 名称
+     *
+     * @param name   名称
      * @param mobile 手机号
-     * @param page 页码
-     * @param size 数量
+     * @param page   页码
+     * @param size   数量
      * @return 略
      */
     public ResultObListWrapper<UserWrapper> findAllByPage(String name, String mobile, Integer page, Integer size) {
@@ -96,20 +97,27 @@ public class UserApi extends CommonApi<User, String> {
 
     /**
      * 添加或修改用户
+     *
      * @param user 用户对象
      * @return 略
      */
     public ResultObWrapper<User> saveUser(User user) {
         ResultObWrapper<User> resultObWrapper = new ResultObWrapper<>();
         try {
-            String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
-            user.setCreatetime(date);
-            this.userService.saveUser(user);
-            resultObWrapper.setData(user);
-            if (StringUtils.isEmpty(user.getId())) {
-                Tools.setSuccessMessage(resultObWrapper, "添加成功");
+            User userPhone = this.userService.findByPhone(user.getPhone());
+            if (null == userPhone) {
+                String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+                user.setCreatetime(date);
+                this.userService.saveUser(user);
+                resultObWrapper.setData(user);
+                if (StringUtils.isEmpty(user.getId())) {
+                    Tools.setSuccessMessage(resultObWrapper, "添加成功");
+                } else {
+                    resultObWrapper.setData(userPhone);
+                    Tools.setSuccessMessage(resultObWrapper, "修改成功");
+                }
             } else {
-                Tools.setSuccessMessage(resultObWrapper, "修改成功");
+                Tools.setSuccessMessage(resultObWrapper, "添加成功");
             }
         } catch (Exception e) {
             log.error("编辑用户失败，错误原因： [{}]", e.getMessage());
@@ -124,6 +132,7 @@ public class UserApi extends CommonApi<User, String> {
 
     /**
      * 删除用户
+     *
      * @param ids ID
      * @return 略
      */
