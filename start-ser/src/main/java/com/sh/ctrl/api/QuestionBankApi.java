@@ -10,16 +10,24 @@ import com.sh.ctrl.entity.QuestionBank;
 import com.sh.ctrl.service.QuestionBankService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @Slf4j
 public class QuestionBankApi extends CommonApi<QuestionBank, String> {
 
     private QuestionBankService questionBankService;
+
+    @Value("${upload.address}")
+    private String uploadAddress;
+
+    @Value("${show.address}")
+    private String showAddress;
 
     @Autowired
     public void setQuestionBankService(QuestionBankService questionBankService) {
@@ -42,6 +50,14 @@ public class QuestionBankApi extends CommonApi<QuestionBank, String> {
         ResultObListWrapper<QuestionBank> resultOb = new ResultObListWrapper<>();
         List<QuestionBank> list = this.questionBankService.findAllByPage("%" + question + "%", page - 1, size);
         long count = this.questionBankService.count();
+        list = list.stream().peek(item -> {
+            if (null != item.getOptionaimg()) {
+                item.setOptionaimg(showAddress + item.getOptionaimg());
+            }
+            if (null != item.getOptionbimg()) {
+                item.setOptionbimg(showAddress + item.getOptionbimg());
+            }
+        }).collect(Collectors.toList());
         resultOb.setItems(list);
         resultOb.setTotal(count);
         Tools.setSuccessMessage(resultOb, "查询成功");

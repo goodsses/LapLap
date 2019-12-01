@@ -1,9 +1,10 @@
 server:
-  port: 9999
+  port: 8081
   servlet:
     context-path: /sh
 logging:
   config: classpath:logback.xml
+
 com:
   sh:
     datasource:
@@ -12,7 +13,7 @@ com:
       dbType: mysql
       driverClassName: com.mysql.jdbc.Driver
       username: root
-      password: GD/hAC0IZWQuPszM9TLJaQ==
+      password: root
       initialSize: 8
       minIdle: 8
       maxActive: 16
@@ -20,12 +21,14 @@ com:
       hibernateDialect: org.hibernate.dialect.MySQL5InnoDBDialect
       hibernateHbm2ddlAuto: none
       showSql: true
-spring:
-  servlet:
-    multipart:
-      max-request-size: 10MB
-      max-file-size: 10MB
 
+# 上传路径
+upload:
+  address: C://MyWorkSpace//Tomcat//apache-tomcat-8.0.45//webapps//qiche//
+
+# 外放访问路径
+show:
+  address: http://47.94.255.160/
 
 spring:
   thymeleaf:
@@ -36,5 +39,8 @@ spring:
     mode: HTML5
     servlet:
       content-type: text/html
+      multipart:
+        max-request-size: 10MB
+        max-file-size: 10MB
 
 

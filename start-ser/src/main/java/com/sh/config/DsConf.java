@@ -78,7 +78,7 @@ public class DsConf {
             dataSource.setMaxActive(dsProp.getMaxActive());
         }
         if (null != dsProp.getPassword()) {
-            dataSource.setPassword(CipherUtil.decryptAesString(dataSource.getPassword()));
+            dataSource.setPassword(dataSource.getPassword());
         }
         List<Filter> filters = new ArrayList<>();
         Slf4jLogFilter slf4jLogFilter = new Slf4jLogFilter();

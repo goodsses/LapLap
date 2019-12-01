@@ -16,8 +16,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -70,22 +68,18 @@ public class QuestionBankController {
                     Tools.setErrorMessage(resultObWrapper, "文件格式不正确");
                     return resultObWrapper;
                 }
-                String path = uploadAddress;
                 String date = String.valueOf(new Date().getTime());
-                if (!new File(path).exists()) {
-                    new File(path).mkdir();
+                if (!new File(uploadAddress).exists()) {
+                    new File(uploadAddress).mkdir();
                 }
-                File files = new File(path + File.separator + date + "_" + fileName);
+                File files = new File(uploadAddress + File.separator + date + "_" + fileName);
                 file.transferTo(files);
                 QuestionBank questionBank = JSONObject.parseObject(bean, QuestionBank.class);
                 if ("1".equals(type)) {
-                    questionBank.setOptionaimg(path + File.separator + date + "_" + fileName);
+                    questionBank.setOptionaimg("/" + date + "_" + fileName);
                 } else {
-                    questionBank.setOptionbimg(path + File.separator + date + "_" + fileName);
+                    questionBank.setOptionbimg("/" + date + "_" + fileName);
                 }
-                //删除图片功能 todo
-
-
                 return this.questionBankApi.saveQuestion(questionBank, type);
             } catch (Exception e) {
                 Tools.setErrorMessage(resultObWrapper, "上传失败");
