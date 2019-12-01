@@ -33,7 +33,7 @@ public class SysUserApi extends CommonApi<SysUser, String> {
      */
     public ResultObWrapper<SysUser> getLogin(String userName, String password) {
         ResultObWrapper<SysUser> resultObWrapper = new ResultObWrapper<>();
-        SysUser user = sysUserService.findByUserNameAndPassword(userName, CipherUtil.encryptAesString(password));
+        SysUser user = sysUserService.findByUserNameAndPassword(userName, password);
         if (null != user) {
             resultObWrapper.setData(user);
             Tools.setSuccessMessage(resultObWrapper, "登录成功！");

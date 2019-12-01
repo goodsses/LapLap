@@ -40,6 +40,9 @@ public class WebController {
     @Value("${show.address}")
     private String showAddress;
 
+    @Value("${upload.address}")
+    private String uploadAddress;
+
     @Autowired
     public void setModelsService(ModelsService modelsService) {
         this.modelsService = modelsService;
@@ -92,7 +95,7 @@ public class WebController {
     public ResponseEntity<byte[]> draw( String time){
         String property = System.getProperty("user.dir");
 
-        List<String> imagePaths= Arrays.asList(showAddress+"\\saft.jpg",showAddress+"\\healthy.jpg",showAddress+"\\huanbao.jpg");
+        List<String> imagePaths= Arrays.asList(uploadAddress+"saft.jpg",uploadAddress+"healthy.jpg",uploadAddress+"huanbao.jpg");
         Random random=new Random();
         int rand=random.nextInt(2);
         //读取图片文件，得到BufferedImage对象
