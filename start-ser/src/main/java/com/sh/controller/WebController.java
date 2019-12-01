@@ -8,6 +8,7 @@ import com.sh.ctrl.service.DealersService;
 import com.sh.ctrl.service.ModelsService;
 import com.sh.ctrl.service.QuestionBankService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -36,6 +37,9 @@ public class WebController {
 
     private ModelsService modelsService;
 
+    @Value("${show.address}")
+    private String showAddress;
+
     @Autowired
     public void setModelsService(ModelsService modelsService) {
         this.modelsService = modelsService;
@@ -60,7 +64,7 @@ public class WebController {
     public String toQuestion(Model model){
         List<QuestionBank> list = this.questionBankService.findAllQuestion();
         model.addAttribute("questionList",list);
-        model.addAttribute("imgurl","http://47.94.255.160/");
+        model.addAttribute("imgurl",showAddress);
         return "dati";
     }
 
@@ -88,7 +92,7 @@ public class WebController {
     public ResponseEntity<byte[]> draw( String time){
         String property = System.getProperty("user.dir");
 
-        List<String> imagePaths= Arrays.asList("E:\\Idea\\TEST\\LapLap\\start-ser\\src\\main\\resources\\static\\images\\saft.jpg","E:\\Idea\\TEST\\LapLap\\start-ser\\src\\main\\resources\\static\\images\\healthy.jpg","E:\\Idea\\TEST\\LapLap\\start-ser\\src\\main\\resources\\static\\images\\huanbao.jpg");
+        List<String> imagePaths= Arrays.asList(showAddress+"\\saft.jpg",showAddress+"\\healthy.jpg",showAddress+"\\huanbao.jpg");
         Random random=new Random();
         int rand=random.nextInt(2);
         //读取图片文件，得到BufferedImage对象
