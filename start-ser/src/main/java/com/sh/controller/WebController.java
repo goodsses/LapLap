@@ -18,7 +18,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.imageio.ImageIO;
-import javax.servlet.http.HttpServletResponse;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
@@ -75,7 +74,7 @@ public class WebController {
     public String toUser(Model model){
         List<String> citys=this.dealersService.getAllCity();
         Map<String,Object> map=new HashMap<>();
-        List<Dealers> dealers=new ArrayList<>();
+        List<Dealers> dealers;
         for (String city:citys) {
             dealers=this.dealersService.getAllByCity(city);
             map.put(city, JSON.toJSON(dealers) );
@@ -93,9 +92,7 @@ public class WebController {
 
     @RequestMapping("img")
     public ResponseEntity<byte[]> draw( String time){
-        String property = System.getProperty("user.dir");
-
-        List<String> imagePaths= Arrays.asList(uploadAddress+"saft.jpg",uploadAddress+"healthy.jpg",uploadAddress+"huanbao.jpg");
+         List<String> imagePaths= Arrays.asList(uploadAddress+"saft.jpg",uploadAddress+"healthy.jpg",uploadAddress+"huanbao.jpg");
         Random random=new Random();
         int rand=random.nextInt(2);
         //读取图片文件，得到BufferedImage对象
