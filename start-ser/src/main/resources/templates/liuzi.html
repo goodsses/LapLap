@@ -46,7 +46,7 @@ $(function(){
         var phone=$("#phone").val();
         var reg=new RegExp("^[0-9]*$");
 
-        if(null==phone || ""==phone || !reg.test(phone)){
+        if(null==phone || ""==phone || !reg.test(phone)|| phone.length!=11){
             alert("请输入正确的手机号")
             return;
         }
@@ -119,8 +119,8 @@ $(function(){
     </div>
   </div>
 <div class="tp_mm">
-  <div class="tplist"><img th:src="@{/images/tp1.jpg}"></div>
-  <div class="tplist"><img th:src="@{/images/tp2.jpg}"></div>
+  <div class="tplist"><img th:src="@{/images/tp1.png}"></div>
+  <div class="tplist"><img th:src="@{/images/tp2.png}"></div>
 </div>
 
 </div>

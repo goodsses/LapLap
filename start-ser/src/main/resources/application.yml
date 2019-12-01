@@ -1,10 +1,9 @@
 server:
-  port: 8081
+  port: 80
   servlet:
     context-path: /sh
 logging:
   config: classpath:logback.xml
-
 com:
   sh:
     datasource:
@@ -28,7 +27,7 @@ upload:
 
 # 外放访问路径
 show:
-  address: http://39.98.148.135/
+  address: http://39.98.148.135:8080/
 
 spring:
   thymeleaf:

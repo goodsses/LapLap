@@ -106,7 +106,7 @@ public class WebController {
             //设置颜色和画笔粗细
             g2d.setColor(Color.white);
             g2d.setStroke(new BasicStroke(3));
-            g2d.setFont(new Font("TimesRoman", Font.BOLD, 23));
+            g2d.setFont(new Font("微软雅黑", Font.BOLD, 23));
             //绘制图案或文字
             g2d.drawString("完美！只用"+time+"秒就完成了所有答题！", 215, 510);
             //保存新图片
