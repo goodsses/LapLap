@@ -1,5 +1,5 @@
 server:
-  port: 9999
+  port: 8081
   servlet:
     context-path: /sh
 logging:
@@ -21,23 +21,26 @@ com:
       hibernateDialect: org.hibernate.dialect.MySQL5InnoDBDialect
       hibernateHbm2ddlAuto: none
       showSql: true
+
+# 上传路径
+upload:
+  address: D://MyFile
+
+# 外放访问路径
+show:
+  address: http://47.94.255.160/
+
 spring:
-  servlet:
-    content-type: text/html
-    multipart:
-      max-request-size: 10MB
-      max-file-size: 10MB
   thymeleaf:
     cache: false
     prefix: classpath:/templates/
     suffix: .html
     encoding: UTF-8
     mode: HTML5
+    servlet:
+      content-type: text/html
+      multipart:
+        max-request-size: 10MB
+        max-file-size: 10MB
 
-# 上传路径
-upload:
-  address: C://MyWorkSpace//Tomcat//apache-tomcat-8.0.45//webapps//qiche//
 
-# 外放访问路径
-show:
-  address: http://47.94.255.160/

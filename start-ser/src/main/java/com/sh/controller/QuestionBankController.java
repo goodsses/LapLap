@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.util.Arrays;
 import java.util.Date;
@@ -55,7 +54,7 @@ public class QuestionBankController {
                     @ApiImplicitParam(value = "实体", dataType = "Object", name = "bean")
             }
     )
-    public ResultObWrapper saveQuestion(@RequestParam(value = "bean") String bean, @RequestParam(value = "type") String type, @RequestParam(value = "file") MultipartFile file, HttpServletRequest request) {
+    public ResultObWrapper saveQuestion(@RequestParam(value = "bean") String bean, @RequestParam(value = "type") String type, @RequestParam(value = "file") MultipartFile file) {
         ResultObWrapper resultObWrapper = new ResultObWrapper();
         Tools.setSuccessMessage(resultObWrapper, "上传成功");
         String fileName = file.getOriginalFilename();
@@ -82,6 +81,7 @@ public class QuestionBankController {
                 }
                 return this.questionBankApi.saveQuestion(questionBank, type);
             } catch (Exception e) {
+                System.out.println(e.getMessage());
                 Tools.setErrorMessage(resultObWrapper, "上传失败");
             }
         } else {
