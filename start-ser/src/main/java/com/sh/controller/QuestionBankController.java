@@ -100,4 +100,5 @@ public class QuestionBankController {
     public ResultObWrapper deleteQuestion(String ids) {
         return this.questionBankApi.deleteQuestion(ids);
     }
+
 }

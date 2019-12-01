@@ -9,6 +9,10 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -57,5 +61,14 @@ public class UserController {
     )
     public ResultObWrapper deleteUser(String ids) {
         return this.userApi.deleteUser(ids);
+    }
+
+    @ApiOperation(value = "exportInfo.导出信息")
+    @RequestMapping(value = "exportInfo", method = {RequestMethod.GET, RequestMethod.POST})
+    public ResponseEntity<byte[]> exportInfo() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentDispositionFormData("attachment", "userInfo.xls");// 文件的属性，也就是文件叫什么吧
+        headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);// 内容是字节流
+        return new ResponseEntity<>(this.userApi.exportInfo(), headers, HttpStatus.OK);
     }
 }

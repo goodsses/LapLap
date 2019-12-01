@@ -3,13 +3,11 @@ package com.sh.ctrl.api;
 import com.alibaba.druid.util.StringUtils;
 import com.sh.common.api.CommonApi;
 import com.sh.common.service.CommonService;
+import com.sh.common.utils.ExcelUtil;
 import com.sh.common.utils.Tools;
 import com.sh.common.wrapper.ResultObListWrapper;
 import com.sh.common.wrapper.ResultObWrapper;
-import com.sh.ctrl.entity.Dealers;
-import com.sh.ctrl.entity.Models;
-import com.sh.ctrl.entity.UserWrapper;
-import com.sh.ctrl.entity.User;
+import com.sh.ctrl.entity.*;
 import com.sh.ctrl.service.DealersService;
 import com.sh.ctrl.service.ModelsService;
 import com.sh.ctrl.service.UserService;
@@ -149,5 +147,38 @@ public class UserApi extends CommonApi<User, String> {
             Tools.setErrorMessage(resultObWrapper, "删除失败");
         }
         return resultObWrapper;
+    }
+
+    /**
+     * 导出信息
+     * @return 略
+     */
+    public byte[] exportInfo() {
+        List<User> userList = this.userService.findAll();
+        List<UserInfoWrapper> wrappers = userList.stream().map(item -> {
+            UserInfoWrapper infoWrapper = new UserInfoWrapper();
+            try {
+                Models models = modelsService.findById(item.getModelid());
+                if (null != models) {
+                    infoWrapper.setModelName(models.getType());
+                }
+            } catch (Exception e) {
+                log.error("分页查询用户未查到关联表车型信息，错误原因： [{}]", e.getMessage());
+            }
+            infoWrapper.setName(item.getName());
+            infoWrapper.setPhone(item.getPhone());
+            infoWrapper.setCreateTime(item.getCreatetime());
+            try {
+                Dealers dealers = dealersService.findById(item.getDealerid());
+                if (null != dealers) {
+                    infoWrapper.setCity(dealers.getCity());
+                    infoWrapper.setJxsName(dealers.getJxsname());
+                }
+            } catch (Exception e) {
+                log.error("分页查询用户未查到关联表经销商信息，错误原因： [{}]", e.getMessage());
+            }
+            return infoWrapper;
+        }).collect(Collectors.toList());
+        return ExcelUtil.beanToExcelBytes(wrappers);
     }
 }

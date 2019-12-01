@@ -8,7 +8,7 @@ logging:
 com:
   sh:
     datasource:
-      url: jdbc:mysql://47.94.255.160:3306/hapiactivite?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+      url: jdbc:mysql://39.98.148.135:3306/hapiactivite?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
       type: com.alibaba.druid.pool.DruidDataSource
       dbType: mysql
       driverClassName: com.mysql.jdbc.Driver
@@ -28,7 +28,7 @@ upload:
 
 # 外放访问路径
 show:
-  address: http://47.94.255.160/
+  address: http://39.98.148.135/
 
 spring:
   thymeleaf:
