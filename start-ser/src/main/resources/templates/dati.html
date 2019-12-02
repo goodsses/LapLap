@@ -9,6 +9,7 @@
 		<title>沃尔沃全新S60</title>
 		<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
 		<script th:src="@{/js/jquery-1.10.2.js}"></script>
+		<script th:src="@{/js/js.js}"></script>
 		<script>
 			var c = 0;
 			var t;
@@ -30,8 +31,16 @@
 				}
 			}
 
-			$(document).ready(function() {
+			function bf(){
+				var audio = document.getElementById('music1');
+				if(audio!==null){
+					//检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+					audio.paused;
+					audio.play();//audio.play();// 这个就是播放
+				}
+			}
 
+			$(document).ready(function() {
 				timedCount();
 				$(".dat_tp1").click(function() {
 					var selectContent=$(this).attr("option");
@@ -53,7 +62,6 @@
 	</head>
 
 	<body class="">
-
 		<div class="main_jz dt_bj">
 			<div class="dat_bj" >
 				<input type="hidden" th:value="${questionList.size()}" class="listsize"/>

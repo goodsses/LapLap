@@ -90,6 +90,16 @@ public class WebController {
         return "fenxiang";
     }
 
+    @RequestMapping("tiaozhuan.html")
+    public String roTiaozhan(){
+        return "tiaozhuan";
+    }
+
+    @RequestMapping("music.html")
+    public String toMusic(){
+        return "music";
+    }
+
     @RequestMapping("img")
     public ResponseEntity<byte[]> draw( String time){
          List<String> imagePaths= Arrays.asList(uploadAddress+"saft.jpg",uploadAddress+"healthy.jpg",uploadAddress+"huanbao.jpg");

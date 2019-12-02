@@ -76,9 +76,9 @@ input,select{border:0;outline:none;/*去除蓝色边框*/}
 .dat_tp{ width:90%; height:auto; /*overflow:hidden;*/ margin:auto;}
 .dat_tp1{ width:50%; height:auto; overflow:hidden; float:left;}
 .dat_tp1 img{ display:block; width:90%; margin:auto;}
-.hbk img{ border:3px solid #34e90e; border-radius:10px;}
+.hbk img{ border:3px solid #34e90e; border-radius:10px; width: 95%;}
 .hbk{ position:relative; top:-3px; z-index:999;}
-.hbkc img{ border:3px solid #e92414; border-radius:10px;}
+.hbkc img{ border:3px solid #e92414; border-radius:10px; width: 95%;}
 .dat_list p{ font-size:13px; line-height:20px;  width:90%; color:#fff; margin:auto; padding:12px 0px; clear:both;}
 .next{ width:150px; height:auto; overflow:hidden; margin:auto; padding-top:10px; padding-bottom:10px;}
 .next img{ display:block; width:80%; margin:auto; }

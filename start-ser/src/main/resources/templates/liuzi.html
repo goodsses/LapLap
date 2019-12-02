@@ -9,7 +9,7 @@
 <title>沃尔沃全新S60</title>
 <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
     <script th:src="@{/js/jquery-1.10.2.js}"></script>
-
+    <script th:src="@{/js/js.js}"></script>
 </head>
 <body class="">
 <script>
@@ -20,6 +20,14 @@
             html+="<option value ='"+dealers[i].id+"'>"+dealers[i].jxsjc+"</option>";
         }
         $("#jxs").html(html);
+    }
+    function bf(){
+        var audio = document.getElementById('music1');
+        if(audio!==null){
+            //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+            audio.paused;
+            audio.play();//audio.play();// 这个就是播放
+        }
     }
 $(function(){
     $(".tjfx").click(function(){
@@ -65,7 +73,6 @@ $(function(){
 
 </script>
 <div class="main_jz liuz">
-
   <div class="sum_tj">
     <p>恭喜您已完成所有问答挑战<br>留下您的个人信息，即刻赢取</p>
    <p> <strong>「冰雪试驾之旅 & 全新S60发布会现场名额」</strong></p>
