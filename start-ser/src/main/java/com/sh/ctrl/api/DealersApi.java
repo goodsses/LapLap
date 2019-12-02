@@ -42,7 +42,7 @@ public class DealersApi extends CommonApi<Dealers, String> {
      */
     public ResultObListWrapper<Dealers> findAllByPage(String city, String jxsName, Integer page, Integer size) {
         ResultObListWrapper<Dealers> resultOb = new ResultObListWrapper<>();
-        List<Dealers> list = this.dealersService.findAllByPage("%" + city + "%", "%" + jxsName + "%", page - 1, size);
+        List<Dealers> list = this.dealersService.findAllByPage("%" + city + "%", "%" + jxsName + "%", (page - 1) * size, size);
         long count = this.dealersService.count();
         resultOb.setItems(list);
         resultOb.setTotal(count);
