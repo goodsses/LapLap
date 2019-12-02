@@ -41,7 +41,7 @@ public class ModelsApi extends CommonApi<Models, String> {
      */
     public ResultObListWrapper<Models> findAllByPage(String type, Integer page, Integer size) {
         ResultObListWrapper<Models> resultOb = new ResultObListWrapper<>();
-        List<Models> list = this.modelsService.findAllByPage("%" + type + "%", page - 1, size);
+        List<Models> list = this.modelsService.findAllByPage("%" + type + "%", (page - 1) * size, size);
         long count = this.modelsService.count();
         resultOb.setItems(list);
         resultOb.setTotal(count);

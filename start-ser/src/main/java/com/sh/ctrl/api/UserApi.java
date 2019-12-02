@@ -62,7 +62,7 @@ public class UserApi extends CommonApi<User, String> {
      */
     public ResultObListWrapper<UserWrapper> findAllByPage(String name, String mobile, Integer page, Integer size) {
         ResultObListWrapper<UserWrapper> resultOb = new ResultObListWrapper<>();
-        List<User> list = this.userService.findAllByPage("%" + name + "%", "%" + mobile + "%", page - 1, size);
+        List<User> list = this.userService.findAllByPage("%" + name + "%", "%" + mobile + "%", (page - 1) * size, size);
         List<UserWrapper> userWrappers = list.stream().map(item -> {
             UserWrapper userWrapper = new UserWrapper();
             BeanUtils.copyProperties(item, userWrapper);

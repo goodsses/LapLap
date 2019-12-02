@@ -48,7 +48,7 @@ public class QuestionBankApi extends CommonApi<QuestionBank, String> {
      */
     public ResultObListWrapper<QuestionBank> findAllByPage(String question, Integer page, Integer size) {
         ResultObListWrapper<QuestionBank> resultOb = new ResultObListWrapper<>();
-        List<QuestionBank> list = this.questionBankService.findAllByPage("%" + question + "%", page - 1, size);
+        List<QuestionBank> list = this.questionBankService.findAllByPage("%" + question + "%", (page - 1) * size, size);
         long count = this.questionBankService.count();
         list = list.stream().peek(item -> {
             if (null != item.getOptionaimg()) {
