@@ -6,13 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<title>沃尔沃全新S60</title>
+<title>2019沃尔沃全新S60浙江区上市发布会</title>
 <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
     <script th:src="@{/js/jquery-1.10.2.js}"></script>
-    <script th:src="@{/js/js.js}"></script>
 </head>
 <body class="">
 <script>
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        audioAutoPlay('music1');
+    }, false);
+
     function selectCity(dealersString,cityCode) {
         var html="<option value =''>经销商</option>";
         var dealers=eval('(' +dealersString + ')');
@@ -21,14 +24,7 @@
         }
         $("#jxs").html(html);
     }
-    function bf(){
-        var audio = document.getElementById('music1');
-        if(audio!==null){
-            //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
-            audio.paused;
-            audio.play();//audio.play();// 这个就是播放
-        }
-    }
+
 $(function(){
     $(".tjfx").click(function(){
        var city= $("#city").val().trim();
@@ -52,7 +48,7 @@ $(function(){
             return;
         }
         var phone=$("#phone").val();
-        var reg=new RegExp("^[0-9]*$");
+        var reg=new RegExp("^1(3|4|5|6|7|8|9)\\d{9}$");
 
         if(null==phone || ""==phone || !reg.test(phone)|| phone.length!=11){
             alert("请输入正确的手机号")
@@ -129,7 +125,33 @@ $(function(){
   <div class="tplist"><img th:src="@{/images/tp1.png}"></div>
   <div class="tplist"><img th:src="@{/images/tp2.png}"></div>
 </div>
-
+    <div class="bgm_btn" style="display: none;">
+        <span class="bgm_btn_play">播放</span>
+        <span class="bgm_btn_stop">暂停</span>
+        <span class="bgm_btn_next">下一首</span>
+        <span class="bgm_btn_rest">停止</span>
+    </div>
+    <audio value="1" id="music1"  th:src="@{/images/onlyyou.mp3}"  hidden="hidden" autoplay="true" preload="auto" loop="loop"></audio>
 </div>
+
+<script>
+    function audioAutoPlay(id){
+        var audio = document.getElementById(id);
+        var play = function(){
+            // audio.currentTime = localStorage.getItem('bgm_time');
+            audio.play();
+            //audio.pause(); 可以在控制打开页面不播放，在没有触屏点击的过程中的一段时间后播放，如预加载完成后播放设置audio的autoplay属性为false
+
+            document.removeEventListener("touchstart",play, false);
+        };
+        audio.play();
+        document.addEventListener("touchstart",play, false);
+    }
+    //如需要加载完成后的某个时间播放，可在相应的状态先后执行暂停播放，设置音乐播放，无需点击屏幕，都可自动播放，并且点击屏幕后也不会暂停。
+    //暂停播放调用
+    function completeFun(){
+        musicStar.play();
+    }
+</script>
 </body>
 </html>

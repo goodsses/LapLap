@@ -6,20 +6,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<title>沃尔沃全新S60</title>
+<title>2019沃尔沃全新S60浙江区上市发布会</title>
 <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
 <script th:src="@{/js/jquery-1.10.2.js}"></script>
+
 </head>
 <style>
 html{height: 100%;}
 </style>
 <script>
+
 	$(function() {
 			var time=window.sessionStorage.getItem("userTime");		
 			$(".usertime").html(time)
         var imga="<img  src='/sh/web/img?time="+time+"'>";
            $(".fxsm").html(imga);
 	});
+    document.addEventListener("WeixinJSBridgeReady", function () {
+      audioAutoPlay('music1');
+    }, false);
 </script>
 <body class="">
 <div class="main_jz fenx">
@@ -32,7 +37,32 @@ html{height: 100%;}
 
 </div>
 <div class="fenx_bot"><p>长按保存图片分享给好友<br>或点击右上角按钮分享给好友或朋友圈</p></div>
-
+  <div class="bgm_btn" style="display: none;">
+    <span class="bgm_btn_play">播放</span>
+    <span class="bgm_btn_stop">暂停</span>
+    <span class="bgm_btn_next">下一首</span>
+    <span class="bgm_btn_rest">停止</span>
+  </div>
+  <audio value="1" id="music1"  th:src="@{/images/onlyyou.mp3}"  hidden="hidden" autoplay="true" preload="auto" loop="loop"></audio>
 </div>
 </body>
+<script>
+  function audioAutoPlay(id){
+    var audio = document.getElementById(id);
+    var play = function(){
+      // audio.currentTime = localStorage.getItem('bgm_time');
+      audio.play();
+      //audio.pause(); 可以在控制打开页面不播放，在没有触屏点击的过程中的一段时间后播放，如预加载完成后播放设置audio的autoplay属性为false
+
+      document.removeEventListener("touchstart",play, false);
+    };
+    audio.play();
+    document.addEventListener("touchstart",play, false);
+  }
+  //如需要加载完成后的某个时间播放，可在相应的状态先后执行暂停播放，设置音乐播放，无需点击屏幕，都可自动播放，并且点击屏幕后也不会暂停。
+  //暂停播放调用
+  function completeFun(){
+    musicStar.play();
+  }
+</script>
 </html>
