@@ -27,7 +27,7 @@
         <!--数据源-->
         <druid.version>1.1.9</druid.version>
         <!--guava缓存<><>博客：https://www.cnblogs.com/fengli9998/p/7805692.html-->
-        <guava.version>25.1-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <!--生成二维码的技术目前两大类：QRCode和Zxing<><>博客：https://blog.csdn.net/kioo_i_see/article/details/82775097-->
         <zxing.version>3.3.3</zxing.version>
         <!--JSON处理-->
