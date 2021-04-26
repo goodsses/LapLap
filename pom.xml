@@ -33,7 +33,7 @@
         <!--JSON处理-->
         <fastjson.version>1.2.56</fastjson.version>
         <!--处理io和文件监控<><>博客：https://www.cnblogs.com/Jeson2016/p/6871644.html-->
-        <commons-io.version>2.6</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
         <!--Apache下一个开源的公共资源池，用来存放链接-->
         <commons-pool2.version>2.5.0</commons-pool2.version>
         <!--java基础类库-->
